@@ -49,6 +49,7 @@ dependencies {
     implementation 'androidx.fragment:fragment:1.1.0'
     implementation 'androidx.multidex:multidex:2.0.0'
 
+
     compile files('libs/bccontrib.jar')
     compile files('libs/bouncycastle.jar')
     compile files('libs/browserlauncher.jar')
@@ -78,7 +79,7 @@ dependencies {
     compile files('libs/osgi.core.jar')
     compile files('libs/otr.jar')
     compile files('libs/plugin-loggingutils.jar')
-    compile files('libs/protocol.jar')
+    //compile files('libs/protocol.jar')
     compile files('libs/replacement.jar')
     compile files('libs/resourcemanager.jar')
     compile files('libs/sdes4j.jar')
@@ -89,4 +90,5 @@ dependencies {
     compile files('libs/updateservice.jar')
     //compile files('libs/util.jar')
     compile files('libs/zrtp4j.jar')
+    compile files('libs/smack-3.1.100.jar')
 }

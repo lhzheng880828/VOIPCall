@@ -220,4 +220,9 @@ public class CallPeerAdapter
         if (peer.equals(ev.getSource()))
             renderer.securityTimeout(ev);
     }
+
+    @Override
+    public void securityMessageRecieved(net.java.sip.communicator.service.protocol.event.CallPeerSecurityMessageEvent event) {
+
+    }
 }

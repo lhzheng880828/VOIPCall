@@ -292,6 +292,7 @@ public class PresenceStatusActivity
     protected void onActivityResult( int requestCode, int resultCode,
                                      Intent data )
     {
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode != SELECT_IMAGE || resultCode != RESULT_OK)
             return;
 

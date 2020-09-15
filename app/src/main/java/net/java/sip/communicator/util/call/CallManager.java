@@ -17,11 +17,23 @@
  */
 package net.java.sip.communicator.util.call;
 
-import java.util.*;
+import net.java.sip.communicator.service.protocol.Call;
+import net.java.sip.communicator.service.protocol.CallPeer;
+import net.java.sip.communicator.service.protocol.CallPeerState;
+import net.java.sip.communicator.service.protocol.Contact;
+import net.java.sip.communicator.service.protocol.OperationFailedException;
+import net.java.sip.communicator.service.protocol.OperationSetBasicTelephony;
+import net.java.sip.communicator.service.protocol.OperationSetVideoTelephony;
+import net.java.sip.communicator.service.protocol.ProtocolProviderService;
+import net.java.sip.communicator.service.protocol.media.MediaAwareCall;
+import net.java.sip.communicator.util.ConfigurationUtils;
+import net.java.sip.communicator.util.Logger;
 
-import net.java.sip.communicator.service.protocol.media.*;
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * 
@@ -654,7 +666,8 @@ public class CallManager
                     contact = null;
                 }
 
-                stringContact = PhoneNumberI18nService.normalize(stringContact);
+                //TODO need confirm
+                stringContact = stringContact;//PhoneNumberI18nService.normalize(stringContact);
             }
 
             Call call = null;

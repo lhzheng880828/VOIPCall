@@ -17,26 +17,41 @@
  */
 package org.jitsi.android.gui.call;
 
-import android.app.*;
-import android.os.*;
-import android.view.*;
-import android.widget.*;
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.service.protocol.event.*;
-import net.java.sip.communicator.service.protocol.media.*;
-import net.java.sip.communicator.util.*;
-import net.java.sip.communicator.util.call.*;
-import org.jitsi.*;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.osgi.*;
-import org.jitsi.service.protocol.event.*;
-import org.jitsi.util.event.*;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
 
-import java.text.*;
-import java.util.*;
-import java.util.List; // Disambiguation
+import net.java.sip.communicator.service.protocol.Call;
+import net.java.sip.communicator.service.protocol.CallPeer;
+import net.java.sip.communicator.service.protocol.OperationSetVideoTelephony;
+import net.java.sip.communicator.service.protocol.event.CallPeerSecurityListener;
+import net.java.sip.communicator.service.protocol.event.CallPeerSecurityMessageEvent;
+import net.java.sip.communicator.service.protocol.event.CallPeerSecurityNegotiationStartedEvent;
+import net.java.sip.communicator.service.protocol.event.CallPeerSecurityOffEvent;
+import net.java.sip.communicator.service.protocol.event.CallPeerSecurityOnEvent;
+import net.java.sip.communicator.service.protocol.event.CallPeerSecurityStatusEvent;
+import net.java.sip.communicator.service.protocol.event.CallPeerSecurityTimeoutEvent;
+import net.java.sip.communicator.service.protocol.media.MediaAwareCallPeer;
+import net.java.sip.communicator.util.Logger;
+import net.java.sip.communicator.util.call.CallManager;
+
+import org.jitsi.R;
+import org.jitsi.android.gui.util.ViewUtil;
+import org.jitsi.android.util.java.awt.Component;
+import org.jitsi.service.neomedia.MediaStream;
+import org.jitsi.service.neomedia.MediaType;
+import org.jitsi.service.neomedia.SrtpControl;
+import org.jitsi.service.neomedia.ZrtpControl;
+import org.jitsi.service.osgi.OSGiDialogFragment;
+import org.jitsi.util.event.VideoEvent;
+import org.jitsi.util.event.VideoListener;
+
+import java.text.MessageFormat;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * The dialog shows security information for ZRTP protocol. Allows user to

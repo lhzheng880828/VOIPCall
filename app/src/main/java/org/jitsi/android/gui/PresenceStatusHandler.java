@@ -168,7 +168,7 @@ public class PresenceStatusHandler
                 && !presence.getPresenceStatus().equals(presenceStatus))
         {
             AndroidGUIActivator.getGlobalStatusService()
-                    .publishStatus(protocolProvider, presenceStatus, false);
+                    .publishStatus(protocolProvider, presenceStatus);
         }
     }
 
