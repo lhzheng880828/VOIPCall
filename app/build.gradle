@@ -1,0 +1,92 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "org.jitsi"
+        minSdkVersion 19
+        targetSdkVersion 29
+
+        multiDexEnabled true
+
+        externalNativeBuild {
+            ndkBuild {
+                cppFlags ""
+                abiFilters 'armeabi-v7a','arm64-v8a'
+            }
+        }
+
+        ndk {
+            moduleName "jnawtrenderer"
+        }
+
+        ndk {
+            abiFilters 'armeabi-v7a','arm64-v8a'
+        }
+
+        testApplicationId "org.jitsi.tests"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    //NDK配置， 先不编译，最终.so产物在libs/armeabi下面
+    sourceSets.main {
+        jni.srcDirs = []//禁用as自动生成mk
+        jniLibs.srcDir 'libs' //指定生成的.so存放位置
+    }
+}
+
+dependencies {
+    implementation project(":serviceapi")
+    implementation 'androidx.fragment:fragment:1.1.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    compile files('libs/bccontrib.jar')
+    compile files('libs/bouncycastle.jar')
+    compile files('libs/browserlauncher.jar')
+    compile files('libs/callhistory.jar')
+    compile files('libs/certificate.jar')
+    compile files('libs/commons-codec.jar')
+    compile files('libs/contactlist.jar')
+    compile files('libs/contactsource.jar')
+    compile files('libs/credentialsstorage.jar')
+    compile files('libs/defaultresources.jar')
+    compile files('libs/dnsservice.jar')
+    compile files('libs/filehistory.jar')
+    compile files('libs/globaldisplaydetails.jar')
+    compile files('libs/history.jar')
+    compile files('libs/httpclient.jar')
+    compile files('libs/httpcore.jar')
+    compile files('libs/httputil.jar')
+    compile files('libs/java-stubs.jar')
+    compile files('libs/libjitsi.jar')
+    compile files('libs/log4j-1.2.8.jar')
+    compile files('libs/metahistory.jar')
+    compile files('libs/msghistory.jar')
+    compile files('libs/muc.jar')
+    compile files('libs/netaddr.jar')
+    compile files('libs/notification-service.jar')
+    compile files('libs/notification-wiring.jar')
+    compile files('libs/osgi.core.jar')
+    compile files('libs/otr.jar')
+    compile files('libs/plugin-loggingutils.jar')
+    compile files('libs/protocol.jar')
+    compile files('libs/replacement.jar')
+    compile files('libs/resourcemanager.jar')
+    compile files('libs/sdes4j.jar')
+    compile files('libs/smack-sasl.jar')
+    compile files('libs/sysactivitynotifications.jar')
+    compile files('libs/systray-service.jar')
+    compile files('libs/ui-service.jar')
+    compile files('libs/updateservice.jar')
+    compile files('libs/util.jar')
+    compile files('libs/zrtp4j.jar')
+}
