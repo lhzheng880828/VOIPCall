@@ -46,12 +46,12 @@ public class PresenceStatusHandler
     {
         bundleContext.addServiceListener(this);
 
-        ServiceReference<ProtocolProviderService>[] pps
-                = ServiceUtils.getServiceReferences(
+        ServiceReference<?>[] pps
+                = ServiceUtils.getServiceReferencesArr(
                         bundleContext, ProtocolProviderService.class);
-        for(ServiceReference<ProtocolProviderService> sRef : pps)
+        for(ServiceReference<?> sRef : pps)
         {
-            ProtocolProviderService provider = bundleContext.getService(sRef);
+            ProtocolProviderService provider = (ProtocolProviderService)bundleContext.getService(sRef);
             updateStatus(provider);
             provider.addRegistrationStateChangeListener(this);
         }

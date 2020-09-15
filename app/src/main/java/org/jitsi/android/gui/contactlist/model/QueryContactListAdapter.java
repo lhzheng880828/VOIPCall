@@ -91,7 +91,7 @@ public class QueryContactListAdapter
     private List<ContactSourceService> getSources()
     {
         ServiceReference<?>[] sources
-            = ServiceUtils.getServiceReferences(
+            = ServiceUtils.getServiceReferencesArr(
                 AndroidGUIActivator.bundleContext,
                 ContactSourceService.class);
 

@@ -87,6 +87,6 @@ dependencies {
     compile files('libs/systray-service.jar')
     compile files('libs/ui-service.jar')
     compile files('libs/updateservice.jar')
-    compile files('libs/util.jar')
+    //compile files('libs/util.jar')
     compile files('libs/zrtp4j.jar')
 }

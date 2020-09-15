@@ -294,7 +294,7 @@ public class SettingsActivity
             BundleContext bc = AndroidGUIActivator.bundleContext;
 
             ServiceReference[] handlerRefs = ServiceUtils
-                    .getServiceReferences(bc, PopupMessageHandler.class);
+                    .getServiceReferencesArr(bc, PopupMessageHandler.class);
             if (handlerRefs == null)
             {
                 logger.warn("No popup handlers found");
@@ -576,7 +576,7 @@ public class SettingsActivity
         {
             BundleContext bc = AndroidGUIActivator.bundleContext;
             ServiceReference[] handlerRefs = ServiceUtils
-                    .getServiceReferences(bc, PopupMessageHandler.class);
+                    .getServiceReferencesArr(bc, PopupMessageHandler.class);
 
             if (handlerRefs == null)
                 return null;
