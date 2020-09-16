@@ -47,7 +47,7 @@ public class PresenceStatusHandler
         bundleContext.addServiceListener(this);
 
         ServiceReference<?>[] pps
-                = ServiceUtils.getServiceReferencesArr(
+                = ServiceUtils.getServiceReferences(
                         bundleContext, ProtocolProviderService.class);
         for(ServiceReference<?> sRef : pps)
         {
@@ -167,8 +167,8 @@ public class PresenceStatusHandler
         if (protocolProvider.isRegistered()
                 && !presence.getPresenceStatus().equals(presenceStatus))
         {
-            AndroidGUIActivator.getGlobalStatusService()
-                    .publishStatus(protocolProvider, presenceStatus);
+            AccountStatusUtils.getGlobalStatusService()
+                    .publishStatus(protocolProvider, presenceStatus,true);
         }
     }
 

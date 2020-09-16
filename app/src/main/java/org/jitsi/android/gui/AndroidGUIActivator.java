@@ -17,36 +17,37 @@
  */
 package org.jitsi.android.gui;
 
-import android.content.*;
+import android.content.Context;
 
-import net.java.sip.communicator.service.contactlist.*;
-import net.java.sip.communicator.service.credentialsstorage.*;
-import net.java.sip.communicator.service.globaldisplaydetails.*;
+import net.java.sip.communicator.service.contactlist.MetaContactListService;
+import net.java.sip.communicator.service.credentialsstorage.CredentialsStorageService;
+import net.java.sip.communicator.service.globaldisplaydetails.GlobalDisplayDetailsService;
+import net.java.sip.communicator.service.gui.AlertUIService;
+import net.java.sip.communicator.service.gui.UIService;
+import net.java.sip.communicator.service.metahistory.MetaHistoryService;
+import net.java.sip.communicator.service.msghistory.MessageHistoryService;
+import net.java.sip.communicator.service.protocol.AccountManager;
+import net.java.sip.communicator.service.protocol.SecurityAuthority;
+import net.java.sip.communicator.service.protocol.globalstatus.GlobalStatusService;
+import net.java.sip.communicator.service.replacement.ReplacementService;
+import net.java.sip.communicator.service.systray.SystrayService;
+import net.java.sip.communicator.util.ConfigurationUtils;
+import net.java.sip.communicator.util.ServiceObserver;
+import net.java.sip.communicator.util.ServiceUtils;
+import net.java.sip.communicator.util.account.LoginManager;
 
-import net.java.sip.communicator.service.gui.*;
-import net.java.sip.communicator.service.metahistory.*;
-import net.java.sip.communicator.service.msghistory.*;
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.service.replacement.*;
-import net.java.sip.communicator.service.systray.*;
+import org.jitsi.android.JitsiApplication;
+import org.jitsi.android.gui.account.AndroidLoginRenderer;
+import org.jitsi.android.gui.chat.ChatSessionManager;
+import org.jitsi.android.gui.login.AndroidSecurityAuthority;
+import org.jitsi.android.gui.util.AlertUIServiceImpl;
+import org.jitsi.android.plugin.otr.OtrFragment;
+import org.jitsi.service.configuration.ConfigurationService;
+import org.jitsi.service.resources.ResourceManagementService;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
 
-import net.java.sip.communicator.service.protocol.globalstatus.*;
-
-import net.java.sip.communicator.util.*;
-import net.java.sip.communicator.util.account.*;
-
-import org.jitsi.android.*;
-import org.jitsi.android.gui.account.*;
-import org.jitsi.android.gui.chat.*;
-import org.jitsi.android.gui.login.*;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.android.plugin.otr.*;
-import org.jitsi.service.configuration.*;
-import org.jitsi.service.resources.*;
-
-import org.osgi.framework.*;
-
-import java.util.*;
+import java.util.List;
 
 /**
  * Creates <tt>LoginManager</tt> and registers <tt>AlertUIService</tt>.
@@ -157,10 +158,14 @@ public class AndroidGUIActivator
 
         // Registers UIService stub
         AndroidUIServiceImpl uiService
-            = new AndroidUIServiceImpl( secuirtyAuthority);
+            = new AndroidUIServiceImpl(secuirtyAuthority);
 
         bundleContext.registerService(
             UIService.class.getName(), uiService, null);
+
+        //register
+
+
     }
 
     /**

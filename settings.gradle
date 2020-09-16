@@ -1,2 +1,3 @@
+include ':thirdLibs'
 include ':serviceapi'
 include ':app'

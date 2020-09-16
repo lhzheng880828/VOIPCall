@@ -17,14 +17,20 @@
  */
 package org.jitsi.impl.osgi.framework.launch;
 
-import java.util.*;
-import java.util.concurrent.*;
+import net.java.sip.communicator.util.Logger;
 
-import net.java.sip.communicator.util.*;
+import org.jitsi.impl.osgi.framework.AsyncExecutor;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleEvent;
+import org.osgi.framework.BundleListener;
+import org.osgi.framework.FrameworkEvent;
+import org.osgi.framework.FrameworkListener;
+import org.osgi.framework.ServiceEvent;
+import org.osgi.framework.ServiceListener;
 
-import org.jitsi.impl.osgi.framework.*;
-
-import org.osgi.framework.*;
+import java.util.EventListener;
+import java.util.EventObject;
+import java.util.concurrent.RejectedExecutionException;
 
 /**
  *
@@ -132,7 +138,7 @@ public class EventDispatcher
                 }
                 catch (Throwable t)
                 {
-                    logger.error("Error dispatching event", t);
+                    logger.warn("Error dispatching event", t);
                     if (FrameworkListener.class.equals(clazz)
                             && ((FrameworkEvent) event).getType()
                                     != FrameworkEvent.ERROR)

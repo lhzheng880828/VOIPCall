@@ -17,20 +17,31 @@
  */
 package org.jitsi.android.gui;
 
-import android.app.*;
-import android.content.*;
-import android.os.Bundle; // disambiguation
+import android.Manifest;
+import android.app.FragmentTransaction;
+import android.app.SearchManager;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import net.java.sip.communicator.util.Logger;
 
-import org.jitsi.*;
-import org.jitsi.android.gui.chat.*;
-import org.jitsi.android.gui.contactlist.*;
-import org.jitsi.android.gui.fragment.*;
-import org.jitsi.android.gui.menu.*;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.android.plugin.otr.*;
-import org.osgi.framework.*;
+import org.jitsi.R;
+import org.jitsi.android.gui.chat.ChatSessionManager;
+import org.jitsi.android.gui.contactlist.ContactListFragment;
+import org.jitsi.android.gui.contactlist.TabletContactListFragment;
+import org.jitsi.android.gui.fragment.ActionBarStatusFragment;
+import org.jitsi.android.gui.menu.MainMenuActivity;
+import org.jitsi.android.gui.util.AndroidUtils;
+import org.jitsi.android.plugin.otr.OtrFragment;
+import org.osgi.framework.BundleContext;
+
+import java.util.List;
+
+import pub.devrel.easypermissions.AfterPermissionGranted;
+import pub.devrel.easypermissions.EasyPermissions;
 
 /**
  * The main <tt>Activity</tt> for Jitsi application.
@@ -41,7 +52,7 @@ import org.osgi.framework.*;
  * @author Pawel Domas
  */
 public class Jitsi
-    extends MainMenuActivity
+    extends MainMenuActivity implements EasyPermissions.PermissionCallbacks
 {
     /**
      * The logger
@@ -132,6 +143,8 @@ public class Jitsi
         }
 
         handleIntent(getIntent(), savedInstanceState);
+
+        methodRequiresPermission();
     }
 
     /**
@@ -153,6 +166,47 @@ public class Jitsi
         super.onRestoreInstanceState(savedInstanceState);
 
         this.instanceState = savedInstanceState;
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        // Forward results to EasyPermissions
+        EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+    }
+
+    public static final int RC_CAMERA = 1; // requestCode
+    @AfterPermissionGranted(RC_CAMERA)
+    private void methodRequiresPermission() {
+        String[] perms = {Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO};
+        if (EasyPermissions.hasPermissions(this, perms)) {
+        // Already have permission, do the thing
+            logger.debug("has some permission");
+        } else {
+            // Do not have permissions, request them now
+            logger.debug("request some permission");
+            EasyPermissions.requestPermissions(this, "请求Camera权限,录音权限",
+                    RC_CAMERA, perms);
+        }
+    }
+
+    @Override
+    public void onPermissionsDenied(int requestCode, @NonNull List<String> perms) {
+
+        logger.debug("permission denied");
+
+        for (String perm: perms){
+            logger.info("perm = "+perm+"\n");
+        }
+    }
+
+    @Override
+    public void onPermissionsGranted(int requestCode, @NonNull List<String> perms) {
+        logger.debug("permission granted");
+        for (String perm: perms){
+            logger.info("perm = "+perm+"\n");
+        }
+
     }
 
     @Override

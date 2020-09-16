@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="org.jitsi"
       android:versionCode="1"
-      android:versionName="0.1.0">
+      android:versionName="0.1.0"
+    xmlns:dist="http://schemas.android.com/apk/distribution">
+
+    <dist:module dist:instant="true" />
     <application    android:label="@string/app_name"
                     android:logo="@drawable/actionbaricon"
                     android:icon="@drawable/logoblue"

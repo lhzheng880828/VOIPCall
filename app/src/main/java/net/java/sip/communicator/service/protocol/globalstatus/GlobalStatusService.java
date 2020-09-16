@@ -63,6 +63,10 @@ public interface GlobalStatusService
      */
     public void publishStatus(GlobalStatusEnum status);
 
+
+    //void publishStatus(ProtocolProviderService protocolProvider, PresenceStatus status);
+
+    void publishStatus(ProtocolProviderService protocolProvider, int floorStatusValue, int ceilStatusValue);
     /**
      * Publish present status. We search for the highest,
      *
@@ -70,9 +74,5 @@ public interface GlobalStatusService
      * change the status.
      * @param status the status to publish.
      */
-    public void publishStatus(
-            ProtocolProviderService protocolProvider,
-            PresenceStatus status);
-
-    void publishStatus(ProtocolProviderService var1, PresenceStatus var2, boolean var3);
+    void publishStatus(ProtocolProviderService protocolProvider, PresenceStatus status, boolean rememberStatus);
 }

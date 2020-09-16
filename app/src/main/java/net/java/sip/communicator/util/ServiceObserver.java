@@ -106,7 +106,7 @@ public class ServiceObserver<T>
         ctx.addServiceListener(this);
 
         Collection<ServiceReference<T>> refs
-            = ServiceUtils.getServiceReferences(ctx, clazz);
+            = ServiceUtils.getServiceReferencesCollect(ctx, clazz);
 
         for(ServiceReference<T> ref : refs)
             services.add(ctx.getService(ref));

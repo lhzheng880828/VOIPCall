@@ -17,15 +17,28 @@
  */
 package net.java.sip.communicator.service.protocol;
 
-import java.util.*;
+import net.java.sip.communicator.service.credentialsstorage.CredentialsStorageService;
+import net.java.sip.communicator.service.protocol.event.AccountManagerEvent;
+import net.java.sip.communicator.service.protocol.event.AccountManagerListener;
+import net.java.sip.communicator.util.Base64;
+import net.java.sip.communicator.util.Logger;
+import net.java.sip.communicator.util.ServiceUtils;
 
-import net.java.sip.communicator.service.credentialsstorage.*;
-import net.java.sip.communicator.service.protocol.event.*;
-import net.java.sip.communicator.util.*;
-import net.java.sip.communicator.util.Base64; //disambiguate from java.util.Base64
+import org.jitsi.service.configuration.ConfigurationService;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceEvent;
+import org.osgi.framework.ServiceListener;
+import org.osgi.framework.ServiceReference;
 
-import org.jitsi.service.configuration.*;
-import org.osgi.framework.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Vector;
 
 /**
  * Represents an implementation of <tt>AccountManager</tt> which loads the
@@ -304,7 +317,7 @@ public class AccountManager
                                     String userID)
     {
         Collection<ServiceReference<ProtocolProviderFactory>> factoryRefs
-            = ServiceUtils.getServiceReferences(
+            = ServiceUtils.getServiceReferencesCollect(
                     bundleContext,
                     ProtocolProviderFactory.class);
         boolean hasStoredAccounts = false;
@@ -405,7 +418,7 @@ public class AccountManager
     public AccountID findAccountID(String uid)
     {
         Collection<ServiceReference<ProtocolProviderFactory>> factoryRefs
-            = ServiceUtils.getServiceReferences(
+            = ServiceUtils.getServiceReferencesCollect(
                     bundleContext,
                     ProtocolProviderFactory.class);
 

@@ -71,7 +71,7 @@ public class ServiceUtils
      * with the specified <tt>serviceClass</tt> if such a services exists there;
      * otherwise, an empty <tt>Collection</tt>
      */
-    public static <T> Collection<ServiceReference<T>> getServiceReferences(
+    public static <T> Collection<ServiceReference<T>> getServiceReferencesCollect(
             BundleContext bundleContext,
             Class<T> serviceClass)
     {
@@ -93,7 +93,7 @@ public class ServiceUtils
         return serviceReferences;
     }
 
-    public static  ServiceReference<?>[] getServiceReferencesArr(BundleContext var0, Class<?> var1) {
+    public static  ServiceReference<?>[] getServiceReferences(BundleContext var0, Class<?> var1) {
         ServiceReference<?>[] var2 = null;
 
         try {

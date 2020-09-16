@@ -17,11 +17,17 @@
  */
 package net.java.sip.communicator.util.account;
 
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.service.protocol.globalstatus.*;
-import net.java.sip.communicator.util.*;
+import android.util.Log;
 
-import java.util.*;
+import net.java.sip.communicator.service.protocol.OperationSet;
+import net.java.sip.communicator.service.protocol.OperationSetPresence;
+import net.java.sip.communicator.service.protocol.PresenceStatus;
+import net.java.sip.communicator.service.protocol.ProtocolProviderService;
+import net.java.sip.communicator.service.protocol.globalstatus.GlobalStatusService;
+import net.java.sip.communicator.util.ServiceUtils;
+import net.java.sip.communicator.util.UtilActivator;
+
+import java.util.Iterator;
 
 /**
  * The <tt>AccountStatusUtils</tt> provides utility methods for account status
@@ -199,10 +205,14 @@ public class AccountStatusUtils
     {
         if (globalStatusService == null)
         {
+            Log.d("GlobalStatusReg", "getGlobal");
+
             globalStatusService
                 = ServiceUtils.getService(
                         UtilActivator.bundleContext,
                         GlobalStatusService.class);
+            Log.d("GlobalStatusReg", "globalStatusService = "+globalStatusService);
+
         }
 
         return globalStatusService;

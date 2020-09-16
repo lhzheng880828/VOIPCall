@@ -74,7 +74,7 @@ public class OtrFingerprints
 
         // Get the protocolproviders
         ServiceReference[] protocolProviderRefs
-                = ServiceUtils.getServiceReferencesArr(
+                = ServiceUtils.getServiceReferences(
                         OtrActivator.bundleContext,
                         ProtocolProviderService.class);
 

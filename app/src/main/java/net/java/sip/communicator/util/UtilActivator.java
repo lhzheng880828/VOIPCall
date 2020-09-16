@@ -17,19 +17,31 @@
  */
 package net.java.sip.communicator.util;
 
-import java.util.*;
+import android.util.Log;
 
-import net.java.sip.communicator.service.gui.*;
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.service.resources.*;
-import net.java.sip.communicator.service.systray.*;
+import net.java.sip.communicator.impl.globaldisplaydetails.GlobalStatusServiceImpl;
+import net.java.sip.communicator.service.gui.AlertUIService;
+import net.java.sip.communicator.service.gui.UIService;
+import net.java.sip.communicator.service.protocol.AccountManager;
+import net.java.sip.communicator.service.protocol.ProtocolProviderFactory;
+import net.java.sip.communicator.service.protocol.globalstatus.GlobalStatusService;
+import net.java.sip.communicator.service.resources.ResourceManagementServiceUtils;
+import net.java.sip.communicator.service.systray.SystrayService;
 
-import org.jitsi.service.configuration.*;
-import org.jitsi.service.fileaccess.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.resources.*;
-import org.jitsi.util.*;
-import org.osgi.framework.*;
+import org.jitsi.service.configuration.ConfigurationService;
+import org.jitsi.service.fileaccess.FileAccessService;
+import org.jitsi.service.neomedia.MediaConfigurationService;
+import org.jitsi.service.neomedia.MediaService;
+import org.jitsi.service.resources.ResourceManagementService;
+import org.jitsi.util.OSUtils;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.InvalidSyntaxException;
+import org.osgi.framework.ServiceReference;
+
+import java.util.Collection;
+import java.util.Hashtable;
+import java.util.Map;
 
 /**
  * The only raison d'etre for this Activator is so that it would set a global
@@ -82,6 +94,12 @@ public class UtilActivator
         throws Exception
     {
         bundleContext = context;
+
+        Log.d("GlobalStatusReg", "register");
+        String name = GlobalStatusService.class.getName();
+        GlobalStatusService instance = new GlobalStatusServiceImpl();
+        Log.d("GlobalStatusReg", "name = "+name+", instance = "+instance);
+        context.registerService(name, instance,null);
 
         if(OSUtils.IS_ANDROID)
             loadLoggingConfig();

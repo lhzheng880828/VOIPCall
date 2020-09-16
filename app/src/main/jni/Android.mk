@@ -32,6 +32,11 @@ LOCAL_SRC_FILES := libjnffmpeg.so
 include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := jnspeex
+LOCAL_SRC_FILES := libjnspeex.so
+include $(PREBUILT_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := jng722
 LOCAL_SRC_FILES := libjng722.so
 include $(PREBUILT_SHARED_LIBRARY)
@@ -42,11 +47,6 @@ include $(PREBUILT_SHARED_LIBRARY)
 # LOCAL_MODULE    := jnopenmax
 # LOCAL_SRC_FILES := org_jitsi_impl_neomedia_codec_video_h264_OMXDecoder.c
 # include $(BUILD_SHARED_LIBRARY)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := jnspeex
-LOCAL_SRC_FILES := libjnspeex.so
-include $(PREBUILT_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_LDLIBS    := -lOpenSLES -llog
