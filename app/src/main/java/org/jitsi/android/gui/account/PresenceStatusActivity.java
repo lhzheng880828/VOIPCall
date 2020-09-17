@@ -373,6 +373,7 @@ public class PresenceStatusActivity
                 try
                 {
                     // Try to publish selected status
+                    //Publishing status PresenceStatus:Offline msg: Default Status Message
                     logger.trace("Publishing status "+status+" msg: "+text);
                     GlobalStatusService globalStatus
                             = ServiceUtils.getService(

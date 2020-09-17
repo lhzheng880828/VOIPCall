@@ -165,7 +165,9 @@ public class SipRegistrarConnection
     * requests. This field is specified by the REGISTERS_USE_ROUTE account
     * property.
     */
-    private boolean useRouteHeader = false;
+    private boolean useRouteHeader = true;
+
+    private String routeAddress = null;
 
     /**
     * The sip address that we're currently behind (the one that corresponds to
@@ -251,6 +253,11 @@ public class SipRegistrarConnection
 
     }
 
+
+    void setRouteAddress(String routeAddress){
+        this.routeAddress = routeAddress;
+    }
+
     /**
      * Changes transport of registrar connection and recreates
      * registrar URI.
@@ -292,7 +299,7 @@ public class SipRegistrarConnection
                 callIdHeader = this.getJainSipProvider().getNewCallId();
 
             request = sipProvider.getMessageFactory().createRegisterRequest(
-                getAddressOfRecord(), registrationsExpiration, callIdHeader,
+                getAddressOfRecord(), getOutProxyAddress(),registrationsExpiration, callIdHeader,
                 getNextCSeqValue());
         }
         catch (Exception exc)
@@ -332,6 +339,7 @@ public class SipRegistrarConnection
         //Transaction
         try
         {
+            logger.debug("register request = "+request.toString());
             regTrans = getJainSipProvider().getNewClientTransaction(request);
         }
         catch (TransactionUnavailableException ex)
@@ -1379,5 +1387,19 @@ public class SipRegistrarConnection
                 + registrarName);
         }
         return ourSipAddressOfRecord;
+    }
+
+
+    private Address getOutProxyAddress(){
+        if (routeAddress == null) return null;
+        Address address = null;
+        try {
+            SipURI sipUri = sipProvider.getAddressFactory().createSipURI(null, routeAddress);
+            address = sipProvider.getAddressFactory().createAddress(null,sipUri);
+            sipUri.setLrParam();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return address;
     }
 }

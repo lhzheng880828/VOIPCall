@@ -181,4 +181,14 @@ public abstract class ProxyConnection
         else
             return new ManualProxyConnection((SipAccountIDImpl) pps.getAccountID());
     }
+
+    @Override
+    public String toString() {
+        return "ProxyConnection{" +
+                "returnedAddresses=" + returnedAddresses +
+                ", transport='" + transport + '\'' +
+                ", socketAddress=" + socketAddress +
+                ", account=" + account +
+                '}';
+    }
 }

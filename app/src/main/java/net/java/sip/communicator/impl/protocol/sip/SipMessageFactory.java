@@ -41,6 +41,7 @@ import android.javax.sip.header.FromHeader;
 import android.javax.sip.header.Header;
 import android.javax.sip.header.HeaderFactory;
 import android.javax.sip.header.MaxForwardsHeader;
+import android.javax.sip.header.RouteHeader;
 import android.javax.sip.header.ToHeader;
 import android.javax.sip.header.UserAgentHeader;
 import android.javax.sip.header.ViaHeader;
@@ -1069,6 +1070,17 @@ public class SipMessageFactory
             request.setHeader(authorization);
     }
 
+    public Request createRegisterRequest(Address      addressOfRecord,
+                                         int          registrationsExpiration,
+                                         CallIdHeader callIdHeader,
+                                         long         cSeqValue)
+            throws InvalidArgumentException,
+            ParseException,
+            OperationFailedException
+    {
+        return createRegisterRequest(addressOfRecord, null, registrationsExpiration, callIdHeader, cSeqValue);
+    }
+
     /**
      * Creates a REGISTER <tt>Request</tt> as per the specified parameters.
      *
@@ -1086,6 +1098,7 @@ public class SipMessageFactory
      * <tt>MaxForwardsHeader</tt>.
      */
     public Request createRegisterRequest(Address      addressOfRecord,
+                                         Address      outProxy,
                                          int          registrationsExpiration,
                                          CallIdHeader callIdHeader,
                                          long         cSeqValue)
@@ -1093,6 +1106,13 @@ public class SipMessageFactory
                ParseException,
                OperationFailedException
     {
+        RouteHeader routeHeader = null;
+        if (outProxy!=null){
+            //Route
+            routeHeader = protocolProvider.getHeaderFactory().
+                    createRouteHeader(outProxy);
+        }
+
         //From
         FromHeader fromHeader = protocolProvider.getHeaderFactory()
             .createFromHeader(addressOfRecord,
@@ -1124,6 +1144,10 @@ public class SipMessageFactory
         Request request = createRequest(
                 requestURI, Request.REGISTER, callIdHeader, cSeqHeader,
                 fromHeader, toHeader, viaHeaders, maxForwardsHeader);
+
+        if (routeHeader!=null){
+            request.addHeader(routeHeader);
+        }
 
         //Expires Header - try to generate it twice in case there was something
         //wrong with the value we received from the provider or the server.

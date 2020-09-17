@@ -25,6 +25,7 @@ import net.java.sip.communicator.util.NetworkUtils;
 
 import java.net.InetSocketAddress;
 import java.text.ParseException;
+import java.util.Arrays;
 
 import static android.javax.sip.ListeningPoint.PORT_5060;
 import static net.java.sip.communicator.service.protocol.ProtocolProviderFactory.PREFERRED_TRANSPORT;
@@ -127,5 +128,18 @@ public class ManualProxyConnection
         if(!ProtocolProviderServiceSipImpl.isValidTransport(transport))
             throw new IllegalArgumentException(
                 transport + " is not a valid SIP transport");
+    }
+
+    @Override
+    public String toString() {
+        return "ManualProxyConnection{" +
+                "address='" + address + '\'' +
+                ", port=" + port +
+                ", lookups=" + Arrays.toString(lookups) +
+                ", lookupIndex=" + lookupIndex +
+                ", transport='" + transport + '\'' +
+                ", socketAddress=" + socketAddress +
+                ", account=" + account +
+                '}';
     }
 }

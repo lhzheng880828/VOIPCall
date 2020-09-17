@@ -54,6 +54,7 @@ import android.javax.sip.message.Request;
 import android.javax.sip.message.Response;
 
 import net.java.sip.communicator.impl.protocol.sip.net.AutoProxyConnection;
+import net.java.sip.communicator.impl.protocol.sip.net.ManualProxyConnection;
 import net.java.sip.communicator.impl.protocol.sip.net.ProxyConnection;
 import net.java.sip.communicator.impl.protocol.sip.security.SipSecurityManager;
 import net.java.sip.communicator.service.dns.DnssecException;
@@ -510,6 +511,7 @@ public class ProtocolProviderServiceSipImpl
 
         //connect to the Registrar.
         connection = ProxyConnection.create(this);
+        logger.debug("proxy connect = "+connection);
         if(!registerUsingNextAddress())
         {
             logger.error("No address found for " + this);
@@ -2805,6 +2807,11 @@ public class ProtocolProviderServiceSipImpl
             }
             else if(connection.getNextAddress())
             {
+                if (connection instanceof ManualProxyConnection){
+                    String proxyString = connection.getOutboundProxyString();
+                    logger.debug("outProxy = "+proxyString);
+                    sipRegistrarConnection.setRouteAddress(proxyString);
+                }
                 sipRegistrarConnection.setTransport(connection.getTransport());
                 sipRegistrarConnection.register();
                 return true;
