@@ -17,24 +17,30 @@
  */
 package org.jitsi.impl.neomedia.device;
 
-import android.content.res.*;
-import android.graphics.*;
+import android.content.res.Resources;
+import android.graphics.ImageFormat;
 import android.hardware.Camera;
-import android.view.*;
+import android.view.Surface;
 
-import net.java.sip.communicator.util.*;
+import net.java.sip.communicator.util.Logger;
 
-import org.jitsi.*;
-import org.jitsi.android.*;
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.impl.neomedia.codec.video.*;
-import org.jitsi.impl.neomedia.device.util.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.neomedia.codec.*;
+import org.jitsi.R;
+import org.jitsi.android.JitsiApplication;
+import org.jitsi.android.util.java.awt.Dimension;
+import org.jitsi.impl.neomedia.codec.video.AndroidEncoder;
+import org.jitsi.impl.neomedia.device.util.AndroidCamera;
+import org.jitsi.impl.neomedia.device.util.CameraUtils;
+import org.jitsi.service.neomedia.MediaType;
+import org.jitsi.service.neomedia.codec.Constants;
 
-import javax.media.*;
-import javax.media.format.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.media.CaptureDeviceManager;
+import javax.media.Format;
+import javax.media.MediaLocator;
+import javax.media.format.VideoFormat;
+import javax.media.format.YUVFormat;
 
 /**
  * Device system that provides YUV and Surface format camera data source.
@@ -153,7 +159,7 @@ public class AndroidCameraSystem
                 {
                     formats.add(
                         new VideoFormat(Constants.ANDROID_SURFACE,
-                                        size,
+                                        new java.awt.Dimension(size.width, size.height),
                                         Format.NOT_SPECIFIED,
                                         Surface.class,
                                         Format.NOT_SPECIFIED));
@@ -178,7 +184,7 @@ public class AndroidCameraSystem
                 for(Dimension size : sizes)
                 {
                     formats.add(
-                        new YUVFormat(size,
+                        new YUVFormat(new java.awt.Dimension(size.width, size.height),
                                       Format.NOT_SPECIFIED,
                                       Format.byteArray,
                                       YUVFormat.YUV_420,

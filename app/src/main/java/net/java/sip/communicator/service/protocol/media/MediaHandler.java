@@ -22,7 +22,6 @@ import net.java.sip.communicator.service.protocol.event.DTMFListener;
 import net.java.sip.communicator.service.protocol.event.DTMFReceivedEvent;
 import net.java.sip.communicator.util.Logger;
 
-import org.jitsi.android.util.java.awt.Component;
 import org.jitsi.service.neomedia.AudioMediaStream;
 import org.jitsi.service.neomedia.MediaDirection;
 import org.jitsi.service.neomedia.MediaService;
@@ -48,6 +47,7 @@ import org.jitsi.util.event.VideoEvent;
 import org.jitsi.util.event.VideoListener;
 import org.jitsi.util.event.VideoNotifierSupport;
 
+import java.awt.Component;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;

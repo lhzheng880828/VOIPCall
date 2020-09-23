@@ -18,4 +18,20 @@ allprojects {
         mavenCentral()
         jcenter()
     }
+
+    configurations.all {
+        resolutionStrategy {
+            resolutionStrategy.eachDependency { details ->
+                if (details.requested.group == 'org.bouncycastle') {
+                    details.useVersion "1.64"
+                }
+                if(details.requested.group == 'androidx.appcompat'){
+                    details.useVersion "1.2.0"
+                }
+                if(details.requested.group == 'androidx.appcompat'){
+                    details.useVersion "1.2.0"
+                }
+            }
+        }
+    }
 }

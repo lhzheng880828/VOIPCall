@@ -17,19 +17,25 @@
  */
 package org.jitsi.impl.neomedia.device;
 
-import android.annotation.*;
-import android.media.audiofx.*;
+import android.annotation.TargetApi;
+import android.media.audiofx.AcousticEchoCanceler;
+import android.media.audiofx.AutomaticGainControl;
+import android.media.audiofx.NoiseSuppressor;
+import android.os.Build;
 
-import java.io.*;
-import java.util.*;
+import org.jitsi.android.gui.util.AndroidUtils;
+import org.jitsi.impl.neomedia.jmfext.media.renderer.audio.AudioTrackRenderer;
+import org.jitsi.service.neomedia.codec.Constants;
 
-import javax.media.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.media.Format;
+import javax.media.MediaLocator;
+import javax.media.Renderer;
 import javax.media.format.AudioFormat;
-
-import android.os.*;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.impl.neomedia.jmfext.media.renderer.audio.*;
-import org.jitsi.service.neomedia.codec.*;
 
 /**
  * Discovers and registers {@link android.media.AudioRecord} capture devices
@@ -160,6 +166,7 @@ public class AudioRecordSystem
      * @return the input stream to audio data.
      * @throws java.io.IOException if an I/O exception occurs
      */
+    @Override
     public InputStream getAudioInputStream(String url)
         throws IOException
     {

@@ -17,16 +17,18 @@
  */
 package org.jitsi.impl.neomedia.jmfext.media.renderer.video;
 
-import android.content.*;
-import android.opengl.*;
-import android.view.*;
+import android.content.Context;
+import android.opengl.GLSurfaceView;
+import android.view.View;
 
-import javax.microedition.khronos.opengles.*;
+import net.java.sip.communicator.util.Logger;
 
-import net.java.sip.communicator.util.*;
+import org.jitsi.service.neomedia.ViewAccessor;
 
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.service.neomedia.*;
+import java.awt.Component;
+import java.awt.Graphics;
+
+import javax.microedition.khronos.opengles.GL10;
 
 /**
  * Implements <tt>java.awt.Component</tt> for <tt>JAWTRenderer</tt> on Android
@@ -109,6 +111,7 @@ public class JAWTRendererAndroidVideoComponent
                                 GL10 gl,
                                 int width, int height)
                         {
+                            logger.debug("surface create width = "+width+", height = "+height);
                             // TODO Auto-generated method stub
                         }
 

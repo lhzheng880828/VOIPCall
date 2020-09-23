@@ -17,24 +17,29 @@
  */
 package org.jitsi.impl.neomedia.device;
 
-import java.util.*;
+import android.content.res.Resources;
+import android.hardware.Camera;
+
+import net.java.sip.communicator.util.Logger;
+
+import org.jitsi.R;
+import org.jitsi.android.JitsiApplication;
+import org.jitsi.android.util.java.awt.Dimension;
+import org.jitsi.impl.neomedia.codec.video.h264.JNIEncoder;
+import org.jitsi.impl.neomedia.device.util.AndroidCamera;
+import org.jitsi.impl.neomedia.device.util.CameraUtils;
+import org.jitsi.impl.neomedia.format.ParameterizedVideoFormat;
+import org.jitsi.service.neomedia.MediaType;
+import org.jitsi.service.neomedia.codec.Constants;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-import javax.media.*;
-
-import android.content.res.*;
-import android.hardware.*;
-
-import net.java.sip.communicator.util.*;
-
-import org.jitsi.*;
-import org.jitsi.android.*;
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.impl.neomedia.codec.video.h264.*;
-import org.jitsi.impl.neomedia.device.util.*;
-import org.jitsi.impl.neomedia.format.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.neomedia.codec.*;
+import javax.media.CaptureDeviceInfo;
+import javax.media.CaptureDeviceManager;
+import javax.media.Format;
+import javax.media.MediaLocator;
 
 /**
  * Discovers and registers <tt>MediaRecorder</tt> capture devices with FMJ.
@@ -221,10 +226,12 @@ public class MediaRecorderSystem
 
             for (int i = 0; i < count; i++)
             {
+
+                Dimension dimension = sizes.get(i);
                 formats[i]
                     = new ParameterizedVideoFormat(
                             Constants.H264,
-                            sizes.get(i),
+                            new java.awt.Dimension(dimension.width, dimension.height),
                             Format.NOT_SPECIFIED /* maxDataLength */,
                             Format.byteArray,
                             Format.NOT_SPECIFIED /* frameRate */,

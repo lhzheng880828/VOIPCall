@@ -17,23 +17,35 @@
  */
 package org.jitsi.impl.neomedia;
 
-import java.beans.*;
-import java.util.*;
+import net.java.sip.communicator.service.gui.ConfigurationForm;
+import net.java.sip.communicator.service.notification.NotificationData;
+import net.java.sip.communicator.service.notification.NotificationHandler;
+import net.java.sip.communicator.service.notification.NotificationService;
+import net.java.sip.communicator.service.notification.PopupMessageNotificationHandler;
+import net.java.sip.communicator.service.resources.ResourceManagementServiceUtils;
+import net.java.sip.communicator.util.Logger;
+import net.java.sip.communicator.util.ServiceUtils;
 
-import net.java.sip.communicator.service.gui.*;
-import net.java.sip.communicator.service.notification.*;
-import net.java.sip.communicator.service.resources.*;
-import net.java.sip.communicator.util.*;
+import org.jitsi.impl.neomedia.device.DeviceConfiguration;
+import org.jitsi.service.audionotifier.AudioNotifierService;
+import org.jitsi.service.configuration.ConfigurationService;
+import org.jitsi.service.fileaccess.FileAccessService;
+import org.jitsi.service.libjitsi.LibJitsi;
+import org.jitsi.service.neomedia.MediaConfigurationService;
+import org.jitsi.service.neomedia.MediaService;
+import org.jitsi.service.packetlogging.PacketLoggingService;
+import org.jitsi.service.resources.ResourceManagementService;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
 
-import org.jitsi.impl.neomedia.device.*;
-import org.jitsi.service.audionotifier.*;
-import org.jitsi.service.configuration.*;
-import org.jitsi.service.fileaccess.*;
-import org.jitsi.service.libjitsi.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.packetlogging.*;
-import org.jitsi.service.resources.*;
-import org.osgi.framework.*;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.Dictionary;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * Implements <tt>BundleActivator</tt> for the neomedia bundle.
@@ -175,7 +187,10 @@ public class NeomediaActivator
 
         // MediaService
         mediaServiceImpl = (MediaServiceImpl) LibJitsi.getMediaService();
-
+        //add by lhzheng
+        if (mediaServiceImpl == null){
+            mediaServiceImpl = new MediaServiceImpl();
+        }
         bundleContext.registerService(
                 MediaService.class.getName(),
                 mediaServiceImpl,

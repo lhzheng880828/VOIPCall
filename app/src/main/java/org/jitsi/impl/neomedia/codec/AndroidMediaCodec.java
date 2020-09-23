@@ -17,22 +17,29 @@
  */
 package org.jitsi.impl.neomedia.codec;
 
-import java.io.*;
-import java.util.*;
-import java.util.List; // Disambiguation
+import android.annotation.TargetApi;
+import android.media.MediaCodec;
+import android.media.MediaCodecInfo;
+import android.media.MediaCodecList;
+import android.media.MediaFormat;
+import android.os.Build;
 
-import javax.media.*;
-import javax.media.format.*;
+import org.jitsi.impl.neomedia.codec.video.AVFrame;
+import org.jitsi.impl.neomedia.codec.video.AVFrameFormat;
+import org.jitsi.impl.neomedia.codec.video.ByteBuffer;
+import org.jitsi.impl.neomedia.jmfext.media.protocol.ByteBufferPool;
+import org.jitsi.service.neomedia.codec.Constants;
+import org.jitsi.util.Logger;
 
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.impl.neomedia.codec.video.*;
-import org.jitsi.impl.neomedia.jmfext.media.protocol.*;
-import org.jitsi.service.neomedia.codec.*;
-import org.jitsi.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
-import android.annotation.*;
-import android.media.*;
-import android.os.*;
+import javax.media.Buffer;
+import javax.media.Format;
+import javax.media.ResourceUnavailableException;
+import javax.media.format.VideoFormat;
 
 /**
  * Implements an FMJ <tt>Codec</tt> using Android's {@link MediaCodec}.
@@ -1075,11 +1082,11 @@ public class AndroidMediaCodec
                  */
                 if (inputFormat instanceof VideoFormat)
                 {
-                    Dimension size
+                    java.awt.Dimension size
                         = ((VideoFormat) inputFormat).getSize();
 
                     if (size == null)
-                        size = new Dimension(640, 480);
+                        size = new java.awt.Dimension(640, 480);
                     if (size != null)
                     {
                         format.setInteger(MediaFormat.KEY_HEIGHT, size.height);
@@ -1145,7 +1152,7 @@ public class AndroidMediaCodec
             {
                 format
                     = new AVFrameFormat(
-                            new Dimension(640, 480),
+                            new java.awt.Dimension(640, 480),
                             avFrameFormat.getFrameRate(),
                             avFrameFormat.getPixFmt(),
                             avFrameFormat.getDeviceSystemPixFmt());

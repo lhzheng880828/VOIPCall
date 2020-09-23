@@ -26,7 +26,6 @@ import net.java.sip.communicator.service.protocol.OperationSetBasicTelephony;
 import net.java.sip.communicator.service.protocol.OperationSetVideoTelephony;
 import net.java.sip.communicator.service.protocol.ProtocolProviderService;
 
-import org.jitsi.android.util.java.awt.Component;
 import org.jitsi.service.neomedia.MediaType;
 import org.jitsi.service.neomedia.MediaUseCase;
 import org.jitsi.service.neomedia.QualityControl;
@@ -34,6 +33,7 @@ import org.jitsi.service.neomedia.QualityPreset;
 import org.jitsi.service.neomedia.VideoMediaStream;
 import org.jitsi.util.event.VideoListener;
 
+import java.awt.Component;
 import java.beans.PropertyChangeListener;
 import java.text.ParseException;
 import java.util.List;
@@ -111,7 +111,7 @@ public abstract class AbstractOperationSetVideoTelephony<
 
     /**
      * Implements
-     * {@link OperationSetVideoTelephony#createLocalVisualComponent(CallPeer)}.
+     * {@link OperationSetVideoTelephony@createLocalVisualComponent(CallPeer)}.
      *
      * @param peer the <tt>CallPeer</tt> that we are sending our local video to.
      * @return the <tt>Component</tt> containing the local video.

@@ -17,11 +17,11 @@
  */
 package net.java.sip.communicator.service.protocol;
 
-import org.jitsi.android.util.java.awt.Component;
 import org.jitsi.service.neomedia.QualityControl;
 import org.jitsi.service.neomedia.QualityPreset;
 import org.jitsi.util.event.VideoListener;
 
+import java.awt.Component;
 import java.beans.PropertyChangeListener;
 import java.text.ParseException;
 import java.util.List;

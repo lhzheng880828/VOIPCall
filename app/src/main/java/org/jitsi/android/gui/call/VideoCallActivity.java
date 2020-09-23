@@ -521,7 +521,8 @@ public class VideoCallActivity
                 }
                 return true;
             default:
-                return super.dispatchKeyEvent(event);
+                //return super.dispatchKeyEvent(event);
+                return false;
         }
     }
 

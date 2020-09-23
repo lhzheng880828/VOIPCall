@@ -226,7 +226,7 @@ public class AndroidDecoder
             YUVFormat yuvFormat = (YUVFormat) videoFormat;
             outputFormat
                     = new YUVFormat(
-                            /* size */ outputSize,
+                            /* size */ new java.awt.Dimension(outputSize.width, outputSize.height),
                             /* maxDataLength */ videoFormat.getMaxDataLength(),
                             Format.byteArray,
                             /* frameRate */ videoFormat.getFrameRate(),
@@ -241,7 +241,7 @@ public class AndroidDecoder
         {
             outputFormat = new VideoFormat(
                             videoFormat.getEncoding(),
-                            outputSize,
+                    outputSize == null?new java.awt.Dimension(500, 500): new java.awt.Dimension(outputSize.width, outputSize.height),
                             videoFormat.getMaxDataLength(),
                             videoFormat.getDataType(),
                             videoFormat.getFrameRate());

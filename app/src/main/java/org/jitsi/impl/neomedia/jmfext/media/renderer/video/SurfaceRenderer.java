@@ -17,18 +17,20 @@
  */
 package org.jitsi.impl.neomedia.jmfext.media.renderer.video;
 
-import android.content.*;
-import android.view.*;
+import android.content.Context;
+import android.view.Surface;
+import android.view.View;
 
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.impl.neomedia.codec.video.*;
-import org.jitsi.impl.neomedia.jmfext.media.renderer.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.neomedia.codec.*;
+import org.jitsi.impl.neomedia.codec.video.AndroidDecoder;
+import org.jitsi.impl.neomedia.jmfext.media.renderer.AbstractRenderer;
+import org.jitsi.service.neomedia.ViewAccessor;
+import org.jitsi.service.neomedia.codec.Constants;
 
-import javax.media.*;
-import javax.media.format.*;
-import javax.media.renderer.*;
+import javax.media.Buffer;
+import javax.media.Format;
+import javax.media.ResourceUnavailableException;
+import javax.media.format.VideoFormat;
+import javax.media.renderer.VideoRenderer;
 
 /**
  * Dummy renderer used only to construct valid codec graph when decoding into
@@ -51,7 +53,7 @@ public class SurfaceRenderer
                             Format.NOT_SPECIFIED)
             };
 
-    private Component component;
+    private java.awt.Component component;
 
     public SurfaceRenderer()
     {
@@ -109,26 +111,21 @@ public class SurfaceRenderer
         if(newFormat.getSize() != null)
         {
             getComponent().setPreferredSize(
-                new Dimension(newFormat.getSize()));
+                    newFormat.getSize());
         }
 
         return newFormat;
     }
 
     @Override
-    public Rectangle getBounds()
+    public java.awt.Rectangle getBounds()
     {
         return null;
     }
 
-    @Override
-    public void setBounds(Rectangle rectangle)
-    {
-
-    }
 
     @Override
-    public Component getComponent()
+    public java.awt.Component getComponent()
     {
         if(component == null)
         {
@@ -138,13 +135,13 @@ public class SurfaceRenderer
     }
 
     @Override
-    public boolean setComponent(Component component)
+    public boolean setComponent(java.awt.Component component)
     {
         return false;
     }
 
     private class SurfaceComponent
-    extends Component
+    extends java.awt.Component
         implements ViewAccessor
     {
         @Override
@@ -152,5 +149,10 @@ public class SurfaceRenderer
         {
             return AndroidDecoder.renderSurfaceProvider.getView();
         }
+    }
+
+    @Override
+    public void setBounds(java.awt.Rectangle rectangle) {
+
     }
 }

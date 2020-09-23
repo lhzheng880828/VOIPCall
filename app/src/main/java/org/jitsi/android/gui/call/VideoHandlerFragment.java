@@ -17,30 +17,47 @@
  */
 package org.jitsi.android.gui.call;
 
-import android.annotation.*;
-import android.app.*;
-import android.hardware.*;
-import android.opengl.*;
-import android.os.*;
-import android.util.*;
-import android.view.*;
-import android.widget.*;
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.hardware.Camera;
+import android.opengl.GLSurfaceView;
+import android.os.Build;
+import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.util.*;
-import net.java.sip.communicator.util.call.*;
+import net.java.sip.communicator.service.protocol.Call;
+import net.java.sip.communicator.service.protocol.CallPeer;
+import net.java.sip.communicator.service.protocol.CallState;
+import net.java.sip.communicator.service.protocol.OperationSetVideoTelephony;
+import net.java.sip.communicator.service.protocol.ProtocolProviderService;
+import net.java.sip.communicator.util.Logger;
+import net.java.sip.communicator.util.call.CallManager;
 
-import org.jitsi.*;
-import org.jitsi.android.gui.controller.*;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.impl.neomedia.codec.video.*;
-import org.jitsi.impl.neomedia.device.util.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.osgi.*;
-import org.jitsi.util.event.*;
+import org.jitsi.R;
+import org.jitsi.android.gui.controller.SimpleDragController;
+import org.jitsi.android.gui.util.AndroidUtils;
+import org.jitsi.impl.neomedia.codec.video.AndroidDecoder;
+import org.jitsi.impl.neomedia.device.util.AndroidCamera;
+import org.jitsi.impl.neomedia.device.util.CameraUtils;
+import org.jitsi.impl.neomedia.device.util.PreviewSurfaceProvider;
+import org.jitsi.service.neomedia.ViewAccessor;
+import org.jitsi.service.osgi.OSGiActivity;
+import org.jitsi.service.osgi.OSGiFragment;
+import org.jitsi.util.event.SizeChangeVideoEvent;
+import org.jitsi.util.event.VideoEvent;
+import org.jitsi.util.event.VideoListener;
 
-import java.util.*;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.util.Iterator;
 
 /**
  * Fragment takes care of handling call UI parts related to the video - both
@@ -512,7 +529,7 @@ public class VideoHandlerFragment
     private void initRemoteVideo(CallPeer callPeer)
     {
         ProtocolProviderService pps = callPeer.getProtocolProvider();
-        Component visualComponent = null;
+        java.awt.Component visualComponent = null;
 
         if (pps != null)
         {
@@ -534,6 +551,7 @@ public class VideoHandlerFragment
     public void handleVideoEvent(CallPeer callPeer,
                                  final VideoEvent event)
     {
+        logger.debug("event = "+event);
         if (event.isConsumed())
             return;
 

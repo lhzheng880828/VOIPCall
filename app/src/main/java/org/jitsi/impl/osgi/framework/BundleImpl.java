@@ -17,17 +17,30 @@
  */
 package org.jitsi.impl.osgi.framework;
 
-import java.io.*;
-import java.net.*;
-import java.security.cert.*;
-import java.util.*;
+import net.java.sip.communicator.util.Logger;
 
-import net.java.sip.communicator.util.*;
-import org.jitsi.impl.osgi.framework.launch.*;
-import org.jitsi.impl.osgi.framework.startlevel.*;
+import org.jitsi.impl.osgi.framework.launch.FrameworkImpl;
+import org.jitsi.impl.osgi.framework.startlevel.BundleStartLevelImpl;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.BundleEvent;
+import org.osgi.framework.BundleException;
+import org.osgi.framework.Constants;
+import org.osgi.framework.ServiceReference;
+import org.osgi.framework.Version;
+import org.osgi.framework.startlevel.BundleStartLevel;
+import org.osgi.framework.startlevel.FrameworkStartLevel;
 
-import org.osgi.framework.*;
-import org.osgi.framework.startlevel.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.security.cert.X509Certificate;
+import java.util.Dictionary;
+import java.util.Enumeration;
+import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -305,10 +318,12 @@ public class BundleImpl
 
             try
             {
+
                 bundleActivator
                     = (BundleActivator)
                         loadClass(location.replace('/', '.')).newInstance();
 
+                logger.debug("start Activator, location  = "+location+", Activator = "+bundleActivator);
                 bundleActivator.start(getBundleContext());
             }
             catch (Throwable t)

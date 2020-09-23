@@ -40,7 +40,6 @@ import net.java.sip.communicator.util.call.CallManager;
 
 import org.jitsi.R;
 import org.jitsi.android.gui.util.ViewUtil;
-import org.jitsi.android.util.java.awt.Component;
 import org.jitsi.service.neomedia.MediaStream;
 import org.jitsi.service.neomedia.MediaType;
 import org.jitsi.service.neomedia.SrtpControl;
@@ -370,7 +369,7 @@ public class ZrtpInfoDialog
             isVideo = mediaAwarePeer.isLocalVideoStreaming();
             if (!isVideo)
             {
-                List<Component> videos
+                List<java.awt.Component> videos
                         = videoTelephony.getVisualComponents(mediaAwarePeer);
 
                 isVideo = ((videos != null) && (videos.size() != 0));

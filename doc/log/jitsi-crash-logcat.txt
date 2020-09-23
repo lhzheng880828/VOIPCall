@@ -1,0 +1,831 @@
+--------- beginning of main
+09-15 21:30:58.415 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 97
+09-15 21:30:58.419 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 97
+09-15 21:30:58.424 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.425 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.trace() net.java.sip.communicator.impl.notifications.eventType1600171258421( oldValue=null, newValue=IncomingFile.
+09-15 21:30:58.440 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.442 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.446 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:58.449 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.451 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.454 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 98
+09-15 21:30:58.458 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.461 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.463 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.466 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.468 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.471 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.529 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.531 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.535 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:58.538 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.540 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.542 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 102
+09-15 21:30:58.547 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 102
+09-15 21:30:58.550 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 102
+09-15 21:30:58.554 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 102
+09-15 21:30:58.558 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.561 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.563 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.565 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.567 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.569 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.571 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.574 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.671 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.674 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.679 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:58.681 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.684 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.685 18410 18429 D Jitsi   : [2103] service.notification.NotificationServiceImpl.registerDefaultNotificationForEvent().865 Registering default event CallSaved/PopupMessageAction/null/null
+09-15 21:30:58.687 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 109
+09-15 21:30:58.693 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 109
+09-15 21:30:58.697 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.698 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.trace() net.java.sip.communicator.impl.notifications.eventType1600171258695( oldValue=null, newValue=CallSaved.
+09-15 21:30:58.722 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.724 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.728 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:58.730 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.732 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.735 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 110
+09-15 21:30:58.739 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.741 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.743 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.745 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.747 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.749 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.828 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.830 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.835 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:58.837 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.840 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.843 18410 18429 I Jitsi   : [2103] plugin.notificationwiring.NotificationWiringActivator.start().59 Notification wiring plugin ...[REGISTERED]
+09-15 21:30:58.846 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.851 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.856 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.860 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.958 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.960 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.964 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:58.966 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.969 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.971 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.976 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.980 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.984 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 114
+09-15 21:30:58.989 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.991 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.993 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.996 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:58.998 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.000 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.002 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.005 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.110 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.112 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.116 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:59.118 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.121 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.123 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 122
+09-15 21:30:59.127 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 122
+09-15 21:30:59.131 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.134 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.181 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.184 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.188 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:59.191 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.193 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.195 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 122
+09-15 21:30:59.200 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 122
+09-15 21:30:59.204 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.206 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.trace() net.java.sip.communicator.impl.notifications.eventType1600171259202( oldValue=null, newValue=missed_call.
+09-15 21:30:59.221 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.223 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.227 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:59.229 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.232 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.234 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 123
+09-15 21:30:59.239 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.241 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.243 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.245 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.248 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.250 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.314 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.316 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.321 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:59.324 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.326 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.328 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 128
+09-15 21:30:59.333 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 128
+09-15 21:30:59.339 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 128
+09-15 21:30:59.343 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 128
+09-15 21:30:59.348 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.350 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.407 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.409 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.413 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:59.415 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.418 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.420 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 129
+09-15 21:30:59.425 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 129
+09-15 21:30:59.429 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 129
+09-15 21:30:59.434 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 129
+09-15 21:30:59.438 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.440 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.485 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.488 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.492 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:59.494 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.496 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.498 18410 18429 D Jitsi   : [2103] service.notification.NotificationServiceImpl.fireNotificationEventTypeEvent().424 Dispatching NotificationEventType Change. Listeners=0 evt=EventTypeRemoved
+09-15 21:30:59.500 18410 18429 D Jitsi   : [2103] service.notification.NotificationServiceImpl.fireNotificationEventTypeEvent().424 Dispatching NotificationEventType Change. Listeners=0 evt=EventTypeRemoved
+09-15 21:30:59.504 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.505 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.trace() net.java.sip.communicator.plugin.loggingconfig.DISABLED( oldValue=null, newValue=true.
+09-15 21:30:59.520 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.522 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.526 18410 18429 D Jitsi   : [2103] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:30:59.529 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.531 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.537 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.538 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.plugin.loggingutils.LogUploadServiceImpl
+09-15 21:30:59.540 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.plugin.loggingutils.LogUploadServiceImpl
+09-15 21:30:59.544 18410 18429 D Jitsi   : [2103] impl.msghistory.MessageHistoryServiceImpl.setHistoryService().1135 New history service registered.
+09-15 21:30:59.546 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.549 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.550 18410 18429 D Jitsi   : [2103] impl.msghistory.MessageHistoryServiceImpl.start().833 Starting the msg history implementation.
+09-15 21:30:59.551 18410 18429 D Jitsi   : [2103] impl.msghistory.MessageHistoryServiceImpl.loadMessageHistoryService().2299 Found 0 already installed providers.
+09-15 21:30:59.553 18410 18429 I Jitsi   : [2103] impl.msghistory.MessageHistoryActivator.start().79 Message History Service ...[REGISTERED]
+09-15 21:30:59.554 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.555 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.msghistory.MessageHistoryServiceImpl
+09-15 21:30:59.556 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.msghistory.MessageHistoryServiceImpl
+09-15 21:30:59.557 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.msghistory.MessageHistoryServiceImpl
+09-15 21:30:59.559 18410 18429 D Jitsi   : [2103] impl.callhistory.CallHistoryServiceImpl.setHistoryService().743 New history service registered.
+09-15 21:30:59.560 18410 18429 D Jitsi   : [2103] impl.callhistory.CallHistoryServiceImpl.start().582 Starting the call history implementation.
+09-15 21:30:59.561 18410 18429 D Jitsi   : [2103] impl.callhistory.CallHistoryServiceImpl.start().610 Found 0 already installed providers.
+09-15 21:30:59.563 18410 18429 I Jitsi   : [2103] impl.callhistory.CallHistoryActivator.start().93 Call History Service ...[REGISTERED]
+09-15 21:30:59.567 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.569 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryServiceImpl
+09-15 21:30:59.570 18410 18429 D Jitsi   : [2103] impl.metahistory.MetaHistoryServiceImpl.start().866 Starting the call history implementation.
+09-15 21:30:59.571 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryServiceImpl
+09-15 21:30:59.571 18410 18429 I Jitsi   : [2103] impl.metahistory.MetaHistoryActivator.start().56 Meta History Service ...[REGISTERED]
+09-15 21:30:59.572 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryServiceImpl
+09-15 21:30:59.573 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryServiceImpl
+09-15 21:30:59.574 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.576 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryContactSource
+09-15 21:30:59.577 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryContactSource
+09-15 21:30:59.578 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryContactSource
+09-15 21:30:59.580 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.impl.callhistory.CallHistoryContactSource
+09-15 21:30:59.581 18410 18429 I Jitsi   : [2103] impl.replacement.smiley.SmileyActivator.start().76 Smiley source implementation [STARTED].
+09-15 21:30:59.584 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.584 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.585 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.metahistory.MetaHistoryServiceImpl
+09-15 21:30:59.587 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.metahistory.MetaHistoryServiceImpl
+09-15 21:30:59.588 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.metahistory.MetaHistoryServiceImpl
+09-15 21:30:59.589 18410 18422 W art     : requesting thread suspend: Thread[1,tid=18410,Native,Thread*=0x7759896a00,peer=0x764e99d0,"main"]
+09-15 21:30:59.589 18410 18422 W art     : requesting thread suspend: Thread[2,tid=18415,Native,Thread*=0x7752e0e000,peer=0x0,"Jit thread pool worker thread 0"]
+09-15 21:30:59.589 18410 18422 W art     : requesting thread suspend: Thread[3,tid=18416,WaitingInMainSignalCatcherLoop,Thread*=0x775030e000,peer=0x12c23f70,"Signal Catcher"]
+09-15 21:30:59.589 18410 18422 W art     : requesting thread suspend: Thread[4,tid=18418,WaitingInMainDebuggerLoop,Thread*=0x7752e17400,peer=0x12c2c0d0,"JDWP"]
+09-15 21:30:59.590 18410 18422 W art     : requesting thread suspend: Thread[5,tid=18419,Waiting,Thread*=0x7750311c00,peer=0x12c2c160,"ReferenceQueueDaemon"]
+09-15 21:30:59.590 18410 18422 W art     : requesting thread suspend: Thread[6,tid=18420,Waiting,Thread*=0x7750312600,peer=0x12c2c1f0,"FinalizerDaemon"]
+09-15 21:30:59.590 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidbrowserlauncher.BrowserLauncherActivator.start().81 Android Browser Launcher STARTED
+09-15 21:30:59.590 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.impl.metahistory.MetaHistoryServiceImpl
+09-15 21:30:59.590 18410 18422 W art     : requesting thread suspend: Thread[7,tid=18421,Sleeping,Thread*=0x7759897400,peer=0x12c2c280,"FinalizerWatchdogDaemon"]
+09-15 21:30:59.591 18410 18422 W art     : requesting thread suspend: Thread[9,tid=18423,Native,Thread*=0x774c80c000,peer=0x12c2c4c0,"Binder:18410_1"]
+09-15 21:30:59.591 18410 18422 W art     : requesting thread suspend: Thread[10,tid=18424,Native,Thread*=0x7752e27800,peer=0x12c2c550,"Binder:18410_2"]
+09-15 21:30:59.591 18410 18422 W art     : requesting thread suspend: Thread[11,tid=18425,Native,Thread*=0x774c812400,peer=0x12c2c790,"Profile Saver"]
+09-15 21:30:59.591 18410 18422 W art     : requesting thread suspend: Thread[12,tid=18426,Native,Thread*=0x7752e2dc00,peer=0x12cde9d0,"RenderThread"]
+09-15 21:30:59.591 18410 18422 W art     : requesting thread suspend: Thread[13,tid=18428,Waiting,Thread*=0x774c83f600,peer=0x12cde550,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.591 18410 18422 W art     : requesting thread suspend: Thread[14,tid=18429,Native,Thread*=0x774c87fc00,peer=0x12c23790,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.591 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidbrowserlauncher.BrowserLauncherActivator.start().90 Android Browser Launcher REGISTERED
+09-15 21:30:59.591 18410 18422 W art     : requesting thread suspend: Thread[15,tid=18442,Runnable,Thread*=0x773d259400,peer=0x12d930d0,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.592 18410 18422 W art     : requesting thread suspend: Thread[16,tid=18443,Waiting,Thread*=0x773d7fa600,peer=0x12d78e50,"Thread-2"]
+09-15 21:30:59.592 18410 18422 W art     : requesting thread suspend: Thread[17,tid=18474,Native,Thread*=0x774c925400,peer=0x12dbac10,"Binder:18410_3"]
+09-15 21:30:59.592 18410 18422 W art     : requesting thread suspend: Thread[18,tid=18475,TimedWaiting,Thread*=0x773d7fb000,peer=0x12dbaca0,"process reaper"]
+09-15 21:30:59.592 18410 18422 W art     : requesting thread suspend: Thread[21,tid=18481,Waiting,Thread*=0x773d254400,peer=0x12d82430,"Reconnect timer"]
+09-15 21:30:59.592 18410 18422 W art     : requesting thread suspend: Thread[20,tid=18482,Waiting,Thread*=0x773d254e00,peer=0x12d89940,"Thread-7"]
+09-15 21:30:59.592 18410 18422 W art     : requesting thread suspend: Thread[19,tid=18483,Waiting,Thread*=0x773d253000,peer=0x12f63940,"Thread-8"]
+09-15 21:30:59.592 18410 18422 W art     : requesting thread suspend: Thread[22,tid=18484,TimedWaiting,Thread*=0x773d255800,peer=0x12d78700,"Thread-9"]
+09-15 21:30:59.597 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.599 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.600 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.603 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.603 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidcontacts.AndroidContactsActivator.start().81 Android contacts STARTED
+09-15 21:30:59.604 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.605 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidcontacts.AndroidContactsActivator.start().90 Android contacts REGISTERED
+09-15 21:30:59.606 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.607 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidcertdialog.CertificateDialogActivator.start().81 Android verify certificate service STARTED
+09-15 21:30:59.608 18410 18422 I art     : Background sticky concurrent mark sweep GC freed 36607(3MB) AllocSpace objects, 0(0B) LOS objects, 30% free, 7MB/10MB, paused 6.286ms total 37.255ms
+09-15 21:30:59.608 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.609 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidcertdialog.CertificateDialogActivator.start().90 Android verify certificate service REGISTERED
+09-15 21:30:59.610 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.611 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidimageloader.ImageLoaderActivator.start().81 Android image loader service STARTED
+09-15 21:30:59.613 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.613 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidimageloader.ImageLoaderActivator.start().90 Android image loader service REGISTERED
+09-15 21:30:59.616 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.impl.replacement.smiley.ReplacementServiceSmileyImpl
+09-15 21:30:59.617 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidnotification.NotificationActivator.start().63 Android notification handler Service...[  STARTED ]
+09-15 21:30:59.619 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.620 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalDisplayDetailsImpl
+09-15 21:30:59.620 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidnotification.NotificationActivator.start().76 Android notification handler Service...[REGISTERED]
+09-15 21:30:59.621 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalDisplayDetailsImpl
+09-15 21:30:59.622 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalDisplayDetailsImpl
+09-15 21:30:59.623 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalDisplayDetailsImpl
+09-15 21:30:59.625 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.626 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalStatusServiceImpl
+09-15 21:30:59.627 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalStatusServiceImpl
+09-15 21:30:59.628 18410 18429 E Jitsi   : [2103] org.jitsi.impl.osgi.framework.BundleImpl.start().316 Error starting bundle: org.jitsi.impl.androidtray.AndroidTrayActivator@43eedd3
+09-15 21:30:59.628 18410 18429 E Jitsi   : java.lang.NoSuchMethodError: No static method getServiceReferences(Lorg/osgi/framework/BundleContext;Ljava/lang/Class;)[Lorg/osgi/framework/ServiceReference; in class Lnet/java/sip/communicator/util/ServiceUtils; or its super classes (declaration of 'net.java.sip.communicator.util.ServiceUtils' appears in /data/app/org.jitsi-2/base.apk)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at net.java.sip.communicator.service.systray.AbstractSystrayService.initHandlers(AbstractSystrayService.java:240)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.androidtray.SystrayServiceImpl.<init>(SystrayServiceImpl.java:74)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.androidtray.AndroidTrayActivator.start(AndroidTrayActivator.java:57)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:312)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:465)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:138)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:123)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:29)
+09-15 21:30:59.628 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:232)
+09-15 21:30:59.628 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalStatusServiceImpl
+09-15 21:30:59.630 18410 18429 E Jitsi   : [2103] org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged().473 Error changing start level
+09-15 21:30:59.630 18410 18429 E Jitsi   : org.osgi.framework.BundleException: BundleActivator.start
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:331)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:465)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:138)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:123)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:29)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:232)
+09-15 21:30:59.630 18410 18429 E Jitsi   : Caused by: java.lang.NoSuchMethodError: No static method getServiceReferences(Lorg/osgi/framework/BundleContext;Ljava/lang/Class;)[Lorg/osgi/framework/ServiceReference; in class Lnet/java/sip/communicator/util/ServiceUtils; or its super classes (declaration of 'net.java.sip.communicator.util.ServiceUtils' appears in /data/app/org.jitsi-2/base.apk)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at net.java.sip.communicator.service.systray.AbstractSystrayService.initHandlers(AbstractSystrayService.java:240)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.androidtray.SystrayServiceImpl.<init>(SystrayServiceImpl.java:74)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.androidtray.AndroidTrayActivator.start(AndroidTrayActivator.java:57)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:312)
+09-15 21:30:59.630 18410 18429 E Jitsi   : 	... 5 more
+09-15 21:30:59.632 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.impl.globaldisplaydetails.GlobalStatusServiceImpl
+09-15 21:30:59.633 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidupdate.UpdateActivator.start().81 Android update service STARTED
+09-15 21:30:59.634 18410 18429 I Jitsi   : [2103] org.jitsi.impl.androidupdate.UpdateActivator.start().90 Android update service REGISTERED
+09-15 21:30:59.635 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.637 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.impl.androidbrowserlauncher.AndroidBrowserLauncher
+09-15 21:30:59.638 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.impl.androidbrowserlauncher.AndroidBrowserLauncher
+09-15 21:30:59.639 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.impl.androidbrowserlauncher.AndroidBrowserLauncher
+09-15 21:30:59.640 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.impl.androidbrowserlauncher.AndroidBrowserLauncher
+09-15 21:30:59.642 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.643 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.impl.androidcontacts.AndroidContactSource
+09-15 21:30:59.644 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.impl.androidcontacts.AndroidContactSource
+09-15 21:30:59.645 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.impl.androidcontacts.AndroidContactSource
+09-15 21:30:59.646 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.impl.androidcontacts.AndroidContactSource
+09-15 21:30:59.647 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.648 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.649 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.impl.androidcertdialog.CertificateDialogServiceImpl
+09-15 21:30:59.649 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.652 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.impl.androidcertdialog.CertificateDialogServiceImpl
+09-15 21:30:59.652 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.653 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.impl.androidcertdialog.CertificateDialogServiceImpl
+09-15 21:30:59.654 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.654 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.impl.androidcertdialog.CertificateDialogServiceImpl
+09-15 21:30:59.656 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.657 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.657 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.impl.androidimageloader.ImageLoaderImpl
+09-15 21:30:59.658 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.impl.androidimageloader.ImageLoaderImpl
+09-15 21:30:59.659 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.659 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.impl.androidimageloader.ImageLoaderImpl
+09-15 21:30:59.661 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.impl.androidimageloader.ImageLoaderImpl
+09-15 21:30:59.661 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.662 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.663 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.impl.androidtray.NotificationPopupHandler
+09-15 21:30:59.664 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.664 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.impl.androidtray.NotificationPopupHandler
+09-15 21:30:59.666 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.impl.androidtray.NotificationPopupHandler
+09-15 21:30:59.666 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.668 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.impl.androidtray.NotificationPopupHandler
+09-15 21:30:59.669 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.669 18410 18442 I Jitsi   : [2105] service.systray.AbstractSystrayService.serviceChanged().314 adding the following popup handler : Status bar notifications
+09-15 21:30:59.671 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.674 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.676 18410 18442 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.678 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.678 18410 18442 I Jitsi   : [2105] service.systray.AbstractSystrayService.setActivePopupMessageHandler().164 setting the following popup handler as active: Status bar notifications
+09-15 21:30:59.680 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.681 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.682 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.impl.androidupdate.UpdateServiceImpl
+09-15 21:30:59.683 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.impl.androidupdate.UpdateServiceImpl
+09-15 21:30:59.684 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.685 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.impl.androidupdate.UpdateServiceImpl
+09-15 21:30:59.686 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.impl.androidupdate.UpdateServiceImpl
+09-15 21:30:59.686 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.687 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.688 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.android.plugin.otr.AndroidOtrActionHandler
+09-15 21:30:59.688 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.689 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.android.plugin.otr.AndroidOtrActionHandler
+09-15 21:30:59.691 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.android.plugin.otr.AndroidOtrActionHandler
+09-15 21:30:59.691 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.692 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.android.plugin.otr.AndroidOtrActionHandler
+09-15 21:30:59.693 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.693 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.694 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.android.gui.util.AlertUIServiceImpl
+09-15 21:30:59.695 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.android.gui.util.AlertUIServiceImpl
+09-15 21:30:59.695 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.696 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.android.gui.util.AlertUIServiceImpl
+09-15 21:30:59.698 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.android.gui.util.AlertUIServiceImpl
+09-15 21:30:59.698 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.701 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.703 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.706 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.708 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.711 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.713 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.716 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.718 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.721 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.723 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.725 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.728 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.730 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.733 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.735 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.738 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.740 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.742 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.745 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.747 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.751 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.753 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.755 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.757 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.760 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.763 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.767 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.769 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.771 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.773 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.776 18410 18429 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.780 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.781 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: org.jitsi.android.gui.AndroidUIServiceImpl
+09-15 21:30:59.783 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: org.jitsi.android.gui.AndroidUIServiceImpl
+09-15 21:30:59.787 18410 18442 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.790 18410 18428 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.794 18410 18442 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:30:59.799 18410 18442 E Jitsi   : [2105] org.jitsi.impl.osgi.framework.launch.EventDispatcher.run().135 Error dispatching event
+09-15 21:30:59.799 18410 18442 E Jitsi   : java.lang.NoSuchMethodError: No static method getServiceReferences(Lorg/osgi/framework/BundleContext;Ljava/lang/Class;)[Lorg/osgi/framework/ServiceReference; in class Lnet/java/sip/communicator/util/ServiceUtils; or its super classes (declaration of 'net.java.sip.communicator.util.ServiceUtils' appears in /data/app/org.jitsi-2/base.apk)
+09-15 21:30:59.799 18410 18442 E Jitsi   : 	at net.java.sip.communicator.plugin.otr.OtrActivator.start(OtrActivator.java:311)
+09-15 21:30:59.799 18410 18442 E Jitsi   : 	at net.java.sip.communicator.util.AbstractServiceDependentActivator$DependentServiceListener.serviceChanged(AbstractServiceDependentActivator.java:134)
+09-15 21:30:59.799 18410 18442 E Jitsi   : 	at org.jitsi.impl.osgi.framework.launch.EventDispatcher$Command.run(EventDispatcher.java:129)
+09-15 21:30:59.799 18410 18442 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:123)
+09-15 21:30:59.799 18410 18442 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:29)
+09-15 21:30:59.799 18410 18442 E Jitsi   : 	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:232)
+09-15 21:30:59.800 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: org.jitsi.android.gui.AndroidUIServiceImpl
+09-15 21:30:59.801 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: org.jitsi.android.gui.AndroidUIServiceImpl
+09-15 21:30:59.803 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.804 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.805 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.806 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.807 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.808 18410 18442 D Jitsi   : [2105] plugin.otr.OtrActivator.serviceChanged().239 Received a service event for: net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.810 18410 18442 D Jitsi   : [2105] service.protocol.SingleCallInProgressPolicy.serviceChanged().1099 Service changed.
+09-15 21:30:59.811 18410 18442 D Jitsi   : [2105] impl.filehistory.FileHistoryServiceImpl.serviceChanged().628 Received a service event for: net.java.sip.communicator.plugin.jabberaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.814 18410 18442 D Jitsi   : [2105] impl.contactlist.MetaContactListServiceImpl.serviceChanged().2330 Received a service event for: net.java.sip.communicator.plugin.jabberaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.815 18410 18442 D Jitsi   : [2105] impl.msghistory.MessageHistoryServiceImpl.serviceChanged().1169 Received a service event for: net.java.sip.communicator.plugin.jabberaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.816 18410 18442 D Jitsi   : [2105] impl.callhistory.CallHistoryServiceImpl.serviceChanged().778 Received a service event for: net.java.sip.communicator.plugin.jabberaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.817 18410 18442 D Jitsi   : [2105] plugin.otr.OtrActivator.serviceChanged().239 Received a service event for: net.java.sip.communicator.plugin.jabberaccregwizz.AccountRegistrationImpl
+09-15 21:30:59.830 18410 18410 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-15 21:30:59.904 18410 18422 W art     : requesting thread suspend: Thread[1,tid=18410,Native,Thread*=0x7759896a00,peer=0x764e99d0,"main"]
+09-15 21:30:59.904 18410 18422 W art     : requesting thread suspend: Thread[2,tid=18415,Native,Thread*=0x7752e0e000,peer=0x0,"Jit thread pool worker thread 0"]
+09-15 21:30:59.904 18410 18422 W art     : requesting thread suspend: Thread[3,tid=18416,WaitingInMainSignalCatcherLoop,Thread*=0x775030e000,peer=0x12c23f70,"Signal Catcher"]
+09-15 21:30:59.904 18410 18422 W art     : requesting thread suspend: Thread[4,tid=18418,WaitingInMainDebuggerLoop,Thread*=0x7752e17400,peer=0x12c2c0d0,"JDWP"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[5,tid=18419,Waiting,Thread*=0x7750311c00,peer=0x12c2c160,"ReferenceQueueDaemon"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[6,tid=18420,Waiting,Thread*=0x7750312600,peer=0x12c2c1f0,"FinalizerDaemon"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[7,tid=18421,Sleeping,Thread*=0x7759897400,peer=0x12c2c280,"FinalizerWatchdogDaemon"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[9,tid=18423,Native,Thread*=0x774c80c000,peer=0x12c2c4c0,"Binder:18410_1"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[10,tid=18424,Native,Thread*=0x7752e27800,peer=0x12c2c550,"Binder:18410_2"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[11,tid=18425,Native,Thread*=0x774c812400,peer=0x12c2c790,"Profile Saver"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[12,tid=18426,Native,Thread*=0x7752e2dc00,peer=0x12cde9d0,"RenderThread"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[13,tid=18428,TimedWaiting,Thread*=0x774c83f600,peer=0x12cde550,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[14,tid=18429,TimedWaiting,Thread*=0x774c87fc00,peer=0x12c23790,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[15,tid=18442,Waiting,Thread*=0x773d259400,peer=0x12d930d0,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[16,tid=18443,Waiting,Thread*=0x773d7fa600,peer=0x12d78e50,"Thread-2"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[17,tid=18474,Native,Thread*=0x774c925400,peer=0x12dbac10,"Binder:18410_3"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[18,tid=18475,TimedWaiting,Thread*=0x773d7fb000,peer=0x12dbaca0,"process reaper"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[21,tid=18481,Waiting,Thread*=0x773d254400,peer=0x12d82430,"Reconnect timer"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[20,tid=18482,Waiting,Thread*=0x773d254e00,peer=0x12d89940,"Thread-7"]
+09-15 21:30:59.905 18410 18422 W art     : requesting thread suspend: Thread[19,tid=18483,Waiting,Thread*=0x773d253000,peer=0x12f63940,"Thread-8"]
+09-15 21:30:59.906 18410 18422 W art     : requesting thread suspend: Thread[22,tid=18484,TimedWaiting,Thread*=0x773d255800,peer=0x12d78700,"Thread-9"]
+09-15 21:30:59.906 18410 18422 W art     : requesting thread suspend: Thread[23,tid=18486,Waiting,Thread*=0x774c920400,peer=0x12dfc0d0,"Timer-0"]
+09-15 21:30:59.942 18410 18422 W art     : requesting thread suspend: Thread[1,tid=18410,Native,Thread*=0x7759896a00,peer=0x764e99d0,"main"]
+09-15 21:30:59.942 18410 18422 W art     : requesting thread suspend: Thread[2,tid=18415,Native,Thread*=0x7752e0e000,peer=0x0,"Jit thread pool worker thread 0"]
+09-15 21:30:59.942 18410 18422 W art     : requesting thread suspend: Thread[3,tid=18416,WaitingInMainSignalCatcherLoop,Thread*=0x775030e000,peer=0x12c23f70,"Signal Catcher"]
+09-15 21:30:59.944 18410 18422 W art     : requesting thread suspend: Thread[4,tid=18418,WaitingInMainDebuggerLoop,Thread*=0x7752e17400,peer=0x12c2c0d0,"JDWP"]
+09-15 21:30:59.944 18410 18422 W art     : requesting thread suspend: Thread[5,tid=18419,Waiting,Thread*=0x7750311c00,peer=0x12c2c160,"ReferenceQueueDaemon"]
+09-15 21:30:59.945 18410 18422 W art     : requesting thread suspend: Thread[6,tid=18420,Waiting,Thread*=0x7750312600,peer=0x12c2c1f0,"FinalizerDaemon"]
+09-15 21:30:59.945 18410 18422 W art     : requesting thread suspend: Thread[7,tid=18421,Sleeping,Thread*=0x7759897400,peer=0x12c2c280,"FinalizerWatchdogDaemon"]
+09-15 21:30:59.945 18410 18422 W art     : requesting thread suspend: Thread[9,tid=18423,Native,Thread*=0x774c80c000,peer=0x12c2c4c0,"Binder:18410_1"]
+09-15 21:30:59.945 18410 18422 W art     : requesting thread suspend: Thread[10,tid=18424,Native,Thread*=0x7752e27800,peer=0x12c2c550,"Binder:18410_2"]
+09-15 21:30:59.945 18410 18422 W art     : requesting thread suspend: Thread[11,tid=18425,Native,Thread*=0x774c812400,peer=0x12c2c790,"Profile Saver"]
+09-15 21:30:59.945 18410 18422 W art     : requesting thread suspend: Thread[12,tid=18426,Native,Thread*=0x7752e2dc00,peer=0x12cde9d0,"RenderThread"]
+09-15 21:30:59.945 18410 18422 W art     : requesting thread suspend: Thread[13,tid=18428,TimedWaiting,Thread*=0x774c83f600,peer=0x12cde550,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[14,tid=18429,TimedWaiting,Thread*=0x774c87fc00,peer=0x12c23790,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[15,tid=18442,Waiting,Thread*=0x773d259400,peer=0x12d930d0,"org.jitsi.impl.osgi.framework.AsyncExecutor"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[16,tid=18443,Waiting,Thread*=0x773d7fa600,peer=0x12d78e50,"Thread-2"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[17,tid=18474,Native,Thread*=0x774c925400,peer=0x12dbac10,"Binder:18410_3"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[18,tid=18475,TimedWaiting,Thread*=0x773d7fb000,peer=0x12dbaca0,"process reaper"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[21,tid=18481,Waiting,Thread*=0x773d254400,peer=0x12d82430,"Reconnect timer"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[20,tid=18482,Waiting,Thread*=0x773d254e00,peer=0x12d89940,"Thread-7"]
+09-15 21:30:59.946 18410 18422 W art     : requesting thread suspend: Thread[19,tid=18483,Waiting,Thread*=0x773d253000,peer=0x12f63940,"Thread-8"]
+09-15 21:30:59.947 18410 18422 W art     : requesting thread suspend: Thread[22,tid=18484,TimedWaiting,Thread*=0x773d255800,peer=0x12d78700,"Thread-9"]
+09-15 21:30:59.947 18410 18422 W art     : requesting thread suspend: Thread[23,tid=18486,Waiting,Thread*=0x774c920400,peer=0x12dfc0d0,"Timer-0"]
+09-15 21:30:59.947 18410 18422 W art     : Suspending all threads took: 5.211ms
+09-15 21:30:59.950 18410 18422 I art     : Background partial concurrent mark sweep GC freed 9126(361KB) AllocSpace objects, 0(0B) LOS objects, 28% free, 10MB/14MB, paused 5.837ms total 33.607ms
+09-15 21:30:59.988 18410 18410 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.account.AccountLoginActivity@798847a
+--------- beginning of main
+09-15 21:58:15.989 18498 18538 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-15 21:58:16.012 18498 18538 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-15 21:58:19.771 18498 18498 I View    : Key down dispatch to android.widget.EditText{6dd0524 VFED..CL. .F...... 266,269-758,309 #7f0800ba app:id/editContactName}, event = KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x8, repeatCount=0, eventTime=5805020580, downTime=5805020580, deviceId=1, source=0x101 }
+09-15 21:58:19.891 18498 18498 I View    : Key up dispatch to android.widget.EditText{6dd0524 VFED..CL. .F...... 266,269-758,309 #7f0800ba app:id/editContactName}, event = KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x8, repeatCount=0, eventTime=5805020702, downTime=5805020580, deviceId=1, source=0x101 }
+09-15 21:58:19.899 18498 18498 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-15 21:58:19.914 18498 18498 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.Jitsi@bb8d4ae
+09-15 21:58:19.921 18498 18498 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().192 Current chat id: null
+09-15 21:58:19.922 18498 18498 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().203 Chat for id: null no longer exists
+09-15 21:58:19.925 18498 18498 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().192 Current chat id: null
+09-15 21:58:19.926 18498 18498 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().203 Chat for id: null no longer exists
+09-15 21:58:19.950 18498 18538 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-15 21:58:19.971 18498 18538 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-15 21:58:20.019 18498 18498 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+09-15 21:58:20.283 18498 18498 D WindowClient: Remove from mViews: DecorView@3deac8a[AddContactActivity], this = android.view.WindowManagerGlobal@9c4b40b
+09-15 21:58:21.227 18498 18498 D WindowClient: Add to mViews: android.widget.PopupWindow$PopupDecorView{e3d919d V.E...... ......I. 0,0-0,0}, this = android.view.WindowManagerGlobal@9c4b40b
+09-15 21:58:21.230 18498 18498 D ViewRootImpl[PopupWindow:e5e6847]: hardware acceleration is enabled, this = ViewRoot{f030612 PopupWindow:e5e6847,ident = 18}
+09-15 21:58:21.257 18498 18538 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-15 21:58:21.261 18498 18538 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-15 21:58:22.342 18498 18498 D WindowClient: Remove from mViews: android.widget.PopupWindow$PopupDecorView{e3d919d V.E...... .......D 0,0-212,407}, this = android.view.WindowManagerGlobal@9c4b40b
+09-15 21:58:22.344 18498 18498 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-15 21:58:22.347 18498 18498 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().192 Current chat id: null
+09-15 21:58:22.349 18498 18498 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().203 Chat for id: null no longer exists
+09-15 21:58:22.403 18498 18498 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.account.AccountLoginActivity@ee1a193
+09-15 21:58:22.405 18498 18498 D WindowClient: Add to mViews: DecorView@b2b120f[AccountLoginActivity], this = android.view.WindowManagerGlobal@9c4b40b
+09-15 21:58:22.410 18498 18498 D ViewRootImpl[AccountLoginActivity]: hardware acceleration is enabled, this = ViewRoot{de76573 org.jitsi/org.jitsi.android.gui.account.AccountLoginActivity,ident = 19}
+09-15 21:58:22.449 18498 18538 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-15 21:58:22.472 18498 18538 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-15 21:58:24.269 18498 18498 D WindowClient: Add to mViews: android.widget.PopupWindow$PopupDecorView{e0e7d43 V.E...... ......I. 0,0-0,0}, this = android.view.WindowManagerGlobal@9c4b40b
+09-15 21:58:24.272 18498 18498 D ViewRootImpl[PopupWindow:1a5c5fd]: hardware acceleration is enabled, this = ViewRoot{b27efc0 PopupWindow:1a5c5fd,ident = 20}
+09-15 21:58:24.298 18498 18538 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-15 21:58:24.302 18498 18538 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-15 21:58:25.138 18498 18498 D WindowClient: Remove from mViews: android.widget.PopupWindow$PopupDecorView{e0e7d43 V.E...... .......D 0,0-508,101}, this = android.view.WindowManagerGlobal@9c4b40b
+09-15 21:58:25.138 18498 18498 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+09-15 21:58:42.653 18498 18498 D Jitsi   : [1] org.jitsi.android.gui.Jitsi.signIn().126 Found 2 already installed providers.
+09-15 21:58:42.655 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.658 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.661 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.663 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.666 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 142
+09-15 21:58:42.671 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 1
+09-15 21:58:42.674 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.677 18498 18498 D Jitsi   : [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.trace() net.java.sip.communicator.impl.protocol.sip.acc1600172922671.ENCRYPTED_PASSWORD( oldValue=null, newValue=null.
+09-15 21:58:42.680 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.683 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.687 18498 18498 D Jitsi   : [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:58:42.689 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.692 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.694 18498 18498 D Jitsi   : [1] impl.credentialsstorage.CredentialsStorageServiceImpl.removePassword().181 Password for 'net.java.sip.communicator.impl.protocol.sip.acc1600172922671' removed
+09-15 21:58:42.696 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.698 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.700 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.703 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.705 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.707 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.709 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.712 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.714 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.716 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.719 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.721 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.871 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.873 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.878 18498 18498 D Jitsi   : [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.debug() Created an empty file in $HOME: /data/user/0/org.jitsi/files/sip-communicator.xml
+09-15 21:58:42.880 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.882 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.885 18498 18498 D Jitsi   : [1] service.protocol.AccountManager.storeAccount().768 Stored account for id SIP:45645@192.168.125.254 for package net.java.sip.communicator.impl.protocol.sip
+09-15 21:58:42.888 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.890 18498 18498 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-15 21:58:42.892 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().241 Request for resource path: resources/images/protocol/sip/sip16x16-offline.png
+09-15 21:58:42.894 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().248 Translated path: sip_status_offline
+09-15 21:58:42.897 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().241 Request for resource path: resources/images/protocol/sip/sip16x16-busy.png
+09-15 21:58:42.898 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().248 Translated path: sip_status_busy
+09-15 21:58:42.901 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().241 Request for resource path: resources/images/protocol/sip/sip16x16-phone.png
+09-15 21:58:42.902 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().248 Translated path: sip_status_phone
+09-15 21:58:42.905 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().241 Request for resource path: resources/images/protocol/sip/sip16x16-meeting.png
+09-15 21:58:42.907 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().241 Request for resource path: resources/images/protocol/sip/sip16x16-away.png
+09-15 21:58:42.908 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().248 Translated path: sip_status_away
+09-15 21:58:42.911 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().241 Request for resource path: resources/images/protocol/sip/sip16x16-online.png
+09-15 21:58:42.913 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().248 Translated path: sip_status_online
+09-15 21:58:42.915 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().241 Request for resource path: resources/images/protocol/sip/sip16x16-offline.png
+09-15 21:58:42.917 18498 18498 D Jitsi   : [1] org.jitsi.impl.androidresources.AndroidResourceServiceImpl.getImageInputStreamForPath().248 Translated path: sip_status_offline
+09-15 21:58:42.930 18498 18498 E Jitsi   : [1] util.UtilActivator.uncaughtException().122 An uncaught exception occurred in thread=Thread[main,5,main] and message was: No virtual method setPathName(Ljava/lang/String;)V in class Ljavax/sip/SipFactory; or its super classes (declaration of 'javax.sip.SipFactory' appears in /system/framework/ext.jar)
+09-15 21:58:42.930 18498 18498 E Jitsi   : java.lang.NoSuchMethodError: No virtual method setPathName(Ljava/lang/String;)V in class Ljavax/sip/SipFactory; or its super classes (declaration of 'javax.sip.SipFactory' appears in /system/framework/ext.jar)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.SipStackSharing.<init>(SipStackSharing.java:174)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.ProtocolProviderServiceSipImpl.initialize(ProtocolProviderServiceSipImpl.java:598)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.ProtocolProviderFactorySipImpl.createService(ProtocolProviderFactorySipImpl.java:315)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.service.protocol.ProtocolProviderFactory.loadAccount(ProtocolProviderFactory.java:995)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.service.protocol.ProtocolProviderFactory.loadAccount(ProtocolProviderFactory.java:971)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.ProtocolProviderFactorySipImpl.installAccount(ProtocolProviderFactorySipImpl.java:140)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl.installAccount(AccountRegistrationImpl.java:126)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl.signin(AccountRegistrationImpl.java:78)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at org.jitsi.android.gui.account.AccountLoginActivity.signIn(AccountLoginActivity.java:151)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at org.jitsi.android.gui.account.AccountLoginActivity.onLoginPerformed(AccountLoginActivity.java:206)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at org.jitsi.android.gui.account.AccountLoginFragment$1.onClick(AccountLoginFragment.java:167)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at android.view.View.performClick(View.java:5675)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at android.view.View$PerformClick.run(View.java:22641)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at android.os.Handler.handleCallback(Handler.java:836)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at android.os.Looper.loop(Looper.java:203)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at android.app.ActivityThread.main(ActivityThread.java:6251)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+09-15 21:58:42.930 18498 18498 E Jitsi   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+09-15 21:58:42.932 18498 18498 E Jitsi   : [1] org.jitsi.android.plugin.errorhandler.ExceptionHandler.uncaughtException().95 Uncaught exception occurred, killing the process...
+09-15 21:58:42.932 18498 18498 E Jitsi   : java.lang.NoSuchMethodError: No virtual method setPathName(Ljava/lang/String;)V in class Ljavax/sip/SipFactory; or its super classes (declaration of 'javax.sip.SipFactory' appears in /system/framework/ext.jar)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.SipStackSharing.<init>(SipStackSharing.java:174)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.ProtocolProviderServiceSipImpl.initialize(ProtocolProviderServiceSipImpl.java:598)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.ProtocolProviderFactorySipImpl.createService(ProtocolProviderFactorySipImpl.java:315)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.service.protocol.ProtocolProviderFactory.loadAccount(ProtocolProviderFactory.java:995)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.service.protocol.ProtocolProviderFactory.loadAccount(ProtocolProviderFactory.java:971)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.impl.protocol.sip.ProtocolProviderFactorySipImpl.installAccount(ProtocolProviderFactorySipImpl.java:140)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl.installAccount(AccountRegistrationImpl.java:126)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at net.java.sip.communicator.plugin.sipaccregwizz.AccountRegistrationImpl.signin(AccountRegistrationImpl.java:78)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at org.jitsi.android.gui.account.AccountLoginActivity.signIn(AccountLoginActivity.java:151)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at org.jitsi.android.gui.account.AccountLoginActivity.onLoginPerformed(AccountLoginActivity.java:206)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at org.jitsi.android.gui.account.AccountLoginFragment$1.onClick(AccountLoginFragment.java:167)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at android.view.View.performClick(View.java:5675)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at android.view.View$PerformClick.run(View.java:22641)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at android.os.Handler.handleCallback(Handler.java:836)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at android.os.Looper.loop(Looper.java:203)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at android.app.ActivityThread.main(ActivityThread.java:6251)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+09-15 21:58:42.932 18498 18498 E Jitsi   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+09-15 21:58:42.941 18630 18630 I org.jitsi: type=1400 audit(0.0:40418): avc: denied { execute_no_trans } for path="/system/bin/logcat" dev="mmcblk0p24" ino=68537 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+09-15 21:58:42.944 18498 18498 I Process : Sending signal. PID: 18498 SIG: 9
+--------- beginning of main
+09-17 13:05:53.349 30717 30815 D Jitsi   : [369] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1703 Query for a UDP listening point
+09-17 13:05:53.350 30717 30815 D Jitsi   : [369] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1709 Will use proxy address
+09-17 13:05:53.351 30717 30815 D Jitsi   : [369] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1735 Returning LP android.gov.nist.javax.sip.ListeningPointImpl@d189360 for transport [UDP] and 
+09-17 13:05:53.351 30717 30815 D libc-netbsd: [getaddrinfo]: mtk hostname=192.168.125.254; servname=(null); netid=0; mark=0
+09-17 13:05:53.352 30717 30815 D libc-netbsd: [getaddrinfo]: mtk ai_addrlen=0; ai_canonname=(null); ai_flags=4; ai_family=0
+09-17 13:05:53.708 30717 30825 D Jitsi   : [379] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1703 Query for a UDP listening point
+09-17 13:05:53.709 30717 30825 D Jitsi   : [379] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1709 Will use proxy address
+09-17 13:05:53.710 30717 30825 D Jitsi   : [379] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1735 Returning LP android.gov.nist.javax.sip.ListeningPointImpl@d189360 for transport [UDP] and 
+09-17 13:05:53.710 30717 30825 D libc-netbsd: [getaddrinfo]: mtk hostname=192.168.125.254; servname=(null); netid=0; mark=0
+09-17 13:05:53.711 30717 30825 D libc-netbsd: [getaddrinfo]: mtk ai_addrlen=0; ai_canonname=(null); ai_flags=4; ai_family=0
+09-17 13:06:01.123 30717 30717 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+09-17 13:06:11.956 30717 30717 E Jitsi   : [1] util.UtilActivator.uncaughtException().140 An uncaught exception occurred in thread=Thread[main,5,main] and message was: Could not execute method for android:onClick
+09-17 13:06:11.956 30717 30717 E Jitsi   : java.lang.IllegalStateException: Could not execute method for android:onClick
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4749)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.view.View.performClick(View.java:5675)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.view.View$PerformClick.run(View.java:22641)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.os.Handler.handleCallback(Handler.java:836)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.os.Looper.loop(Looper.java:203)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.app.ActivityThread.main(ActivityThread.java:6251)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+09-17 13:06:11.956 30717 30717 E Jitsi   : Caused by: java.lang.reflect.InvocationTargetException
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4744)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	... 9 more
+09-17 13:06:11.956 30717 30717 E Jitsi   : Caused by: java.lang.ClassCastException: java.lang.Object cannot be cast to net.java.sip.communicator.service.contactlist.MetaContactGroup
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	at org.jitsi.android.gui.contactlist.AddContactActivity.onAddClicked(AddContactActivity.java:180)
+09-17 13:06:11.956 30717 30717 E Jitsi   : 	... 11 more
+09-17 13:06:11.958 30717 30717 E Jitsi   : [1] org.jitsi.android.plugin.errorhandler.ExceptionHandler.uncaughtException().95 Uncaught exception occurred, killing the process...
+09-17 13:06:11.958 30717 30717 E Jitsi   : java.lang.IllegalStateException: Could not execute method for android:onClick
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4749)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.view.View.performClick(View.java:5675)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.view.View$PerformClick.run(View.java:22641)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.os.Handler.handleCallback(Handler.java:836)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.os.Looper.loop(Looper.java:203)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.app.ActivityThread.main(ActivityThread.java:6251)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+09-17 13:06:11.958 30717 30717 E Jitsi   : Caused by: java.lang.reflect.InvocationTargetException
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4744)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	... 9 more
+09-17 13:06:11.958 30717 30717 E Jitsi   : Caused by: java.lang.ClassCastException: java.lang.Object cannot be cast to net.java.sip.communicator.service.contactlist.MetaContactGroup
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	at org.jitsi.android.gui.contactlist.AddContactActivity.onAddClicked(AddContactActivity.java:180)
+09-17 13:06:11.958 30717 30717 E Jitsi   : 	... 11 more
+09-17 13:06:11.968 30955 30955 I org.jitsi: type=1400 audit(0.0:44894): avc: denied { execute } for name="logcat" dev="mmcblk0p24" ino=68537 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+09-17 13:06:11.968 30955 30955 I org.jitsi: type=1400 audit(0.0:44895): avc: denied { execute_no_trans } for path="/system/bin/logcat" dev="mmcblk0p24" ino=68537 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+09-17 13:06:11.971 30717 30717 I Process : Sending signal. PID: 30717 SIG: 9
+--------- beginning of main
+09-17 13:08:23.976 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.account.AccountLoginActivity@a5992c4
+09-17 13:08:23.980 30960 30960 D WindowClient: Add to mViews: DecorView@4eaf0d0[AccountLoginActivity], this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:23.983 30960 30960 D ViewRootImpl[AccountLoginActivity]: hardware acceleration is enabled, this = ViewRoot{55adeaf org.jitsi/org.jitsi.android.gui.account.AccountLoginActivity,ident = 7}
+09-17 13:08:24.030 30960 30977 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-17 13:08:24.047 30960 30977 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-17 13:08:25.866 30960 30960 I art     : Rejecting re-init on previously-failed class java.lang.Class<androidx.core.view.ViewCompat$2>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+09-17 13:08:25.866 30960 30960 I art     :   at boolean androidx.core.view.ViewCompat.dispatchUnhandledKeyEventBeforeHierarchy(android.view.View, android.view.KeyEvent) (ViewCompat.java:3750)
+09-17 13:08:25.866 30960 30960 I art     :   at boolean androidx.core.view.KeyEventDispatcher.dispatchBeforeHierarchy(android.view.View, android.view.KeyEvent) (KeyEventDispatcher.java:63)
+09-17 13:08:25.866 30960 30960 I art     :   at boolean androidx.core.app.ComponentActivity.dispatchKeyEvent(android.view.KeyEvent) (ComponentActivity.java:130)
+09-17 13:08:25.866 30960 30960 I art     :   at boolean com.android.internal.policy.DecorView.dispatchKeyEvent(android.view.KeyEvent) (DecorView.java:334)
+09-17 13:08:25.867 30960 30960 I art     :   at int android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4822)
+09-17 13:08:25.867 30960 30960 I art     :   at int android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4787)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.deliver(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4298)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.onDeliverToNext(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4351)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4317)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$AsyncInputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4464)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.apply(android.view.ViewRootImpl$QueuedInputEvent, int) (ViewRootImpl.java:4325)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$AsyncInputStage.apply(android.view.ViewRootImpl$QueuedInputEvent, int) (ViewRootImpl.java:4521)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.deliver(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4298)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.onDeliverToNext(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4351)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4317)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.apply(android.view.ViewRootImpl$QueuedInputEvent, int) (ViewRootImpl.java:4325)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.deliver(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4298)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.onDeliverToNext(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4351)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4317)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$AsyncInputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4497)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(java.lang.Object, boolean) (ViewRootImpl.java:4667)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager$PendingEvent.run() (InputMethodManager.java:2449)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(android.view.inputmethod.InputMethodManager$PendingEvent, boolean) (InputMethodManager.java:2028)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager.finishedInputEvent(int, boolean, boolean) (InputMethodManager.java:2019)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(int, boolean) (InputMethodManager.java:2426)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.view.InputEventSender.dispatchInputEventFinished(int, boolean) (InputEventSender.java:141)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.os.MessageQueue.nativePollOnce(long, int) (MessageQueue.java:-2)
+09-17 13:08:25.867 30960 30960 I art     :   at android.os.Message android.os.MessageQueue.next() (MessageQueue.java:328)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.os.Looper.loop() (Looper.java:148)
+09-17 13:08:25.867 30960 30960 I art     :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6251)
+09-17 13:08:25.867 30960 30960 I art     :   at java.lang.Object java.lang.reflect.Method.invoke!(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+09-17 13:08:25.868 30960 30960 I art     :   at void com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run() (ZygoteInit.java:1063)
+09-17 13:08:25.868 30960 30960 I art     :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:924)
+09-17 13:08:25.868 30960 30960 I art     : Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.View$OnUnhandledKeyEventListener" on path: DexPathList[[zip file "/data/app/org.jitsi-2/base.apk"],nativeLibraryDirectories=[/data/app/org.jitsi-2/lib/arm, /data/app/org.jitsi-2/base.apk!/lib/armeabi-v7a, /system/lib, /vendor/lib, /system/vendor/lib]]
+09-17 13:08:25.868 30960 30960 I art     :   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:56)
+09-17 13:08:25.868 30960 30960 I art     :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:380)
+09-17 13:08:25.868 30960 30960 I art     :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+09-17 13:08:25.868 30960 30960 I art     :   at boolean androidx.core.view.ViewCompat.dispatchUnhandledKeyEventBeforeHierarchy(android.view.View, android.view.KeyEvent) (ViewCompat.java:3750)
+09-17 13:08:25.868 30960 30960 I art     :   at boolean androidx.core.view.KeyEventDispatcher.dispatchBeforeHierarchy(android.view.View, android.view.KeyEvent) (KeyEventDispatcher.java:63)
+09-17 13:08:25.868 30960 30960 I art     :   at boolean androidx.core.app.ComponentActivity.dispatchKeyEvent(android.view.KeyEvent) (ComponentActivity.java:130)
+09-17 13:08:25.868 30960 30960 I art     :   at boolean com.android.internal.policy.DecorView.dispatchKeyEvent(android.view.KeyEvent) (DecorView.java:334)
+09-17 13:08:25.868 30960 30960 I art     :   at int android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4822)
+09-17 13:08:25.868 30960 30960 I art     :   at int android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4787)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.deliver(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4298)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.onDeliverToNext(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4351)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4317)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$AsyncInputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4464)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.apply(android.view.ViewRootImpl$QueuedInputEvent, int) (ViewRootImpl.java:4325)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$AsyncInputStage.apply(android.view.ViewRootImpl$QueuedInputEvent, int) (ViewRootImpl.java:4521)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.deliver(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4298)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.onDeliverToNext(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4351)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4317)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.apply(android.view.ViewRootImpl$QueuedInputEvent, int) (ViewRootImpl.java:4325)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.deliver(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4298)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.onDeliverToNext(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4351)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$InputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4317)
+09-17 13:08:25.868 30960 30960 I art     :   at void android.view.ViewRootImpl$AsyncInputStage.forward(android.view.ViewRootImpl$QueuedInputEvent) (ViewRootImpl.java:4497)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(java.lang.Object, boolean) (ViewRootImpl.java:4667)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager$PendingEvent.run() (InputMethodManager.java:2449)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(android.view.inputmethod.InputMethodManager$PendingEvent, boolean) (InputMethodManager.java:2028)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager.finishedInputEvent(int, boolean, boolean) (InputMethodManager.java:2019)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(int, boolean) (InputMethodManager.java:2426)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.view.InputEventSender.dispatchInputEventFinished(int, boolean) (InputEventSender.java:141)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.os.MessageQueue.nativePollOnce(long, int) (MessageQueue.java:-2)
+09-17 13:08:25.869 30960 30960 I art     :   at android.os.Message android.os.MessageQueue.next() (MessageQueue.java:328)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.os.Looper.loop() (Looper.java:148)
+09-17 13:08:25.869 30960 30960 I art     :   at void android.app.ActivityThread.main(java.lang.String[]) (ActivityThread.java:6251)
+09-17 13:08:25.869 30960 30960 I art     :   at java.lang.Object java.lang.reflect.Method.invoke!(java.lang.Object, java.lang.Object[]) (Method.java:-2)
+09-17 13:08:25.869 30960 30960 I art     :   at void com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run() (ZygoteInit.java:1063)
+09-17 13:08:25.869 30960 30960 I art     :   at void com.android.internal.os.ZygoteInit.main(java.lang.String[]) (ZygoteInit.java:924)
+09-17 13:08:25.869 30960 30960 I art     : 
+09-17 13:08:25.890 30960 30960 I View    : Key down dispatch to android.widget.EditText{7a986c7 VFED..CL. .F...... 266,60-758,100 #7f0801bb app:id/usernameField}, event = KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x8, repeatCount=0, eventTime=5946026668, downTime=5946026668, deviceId=1, source=0x101 }
+09-17 13:08:25.942 30960 30960 I View    : Key up dispatch to android.widget.EditText{7a986c7 VFED..CL. .F...... 266,60-758,100 #7f0801bb app:id/usernameField}, event = KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x8, repeatCount=0, eventTime=5946026753, downTime=5946026668, deviceId=1, source=0x101 }
+09-17 13:08:25.952 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-17 13:08:25.968 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.setProtocolProvider().327 Registered listeners for ProtocolProviderServiceSipImpl(34234@192.168.125.254 (SIP))
+09-17 13:08:25.971 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:25.974 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:25.976 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.addAccountEventListener().375 Added change listener org.jitsi.android.gui.account.AccountsListActivity$AccountStatusListAdapter@d28ac05
+09-17 13:08:25.978 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.setProtocolProvider().327 Registered listeners for ProtocolProviderServiceSipImpl(+867598204021@ims.ge.chinamobile.com (SIP))
+09-17 13:08:25.981 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:25.983 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:25.985 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.addAccountEventListener().375 Added change listener org.jitsi.android.gui.account.AccountsListActivity$AccountStatusListAdapter@d28ac05
+09-17 13:08:25.987 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.setProtocolProvider().327 Registered listeners for ProtocolProviderServiceSipImpl(33675@192.168.125.254 (SIP))
+09-17 13:08:25.990 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:25.992 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:25.994 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.addAccountEventListener().375 Added change listener org.jitsi.android.gui.account.AccountsListActivity$AccountStatusListAdapter@d28ac05
+09-17 13:08:25.999 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.account.AccountsListActivity@1eb5b14
+09-17 13:08:26.011 30960 30977 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-17 13:08:26.032 30960 30977 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-17 13:08:26.049 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:26.051 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:26.053 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:26.055 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:26.115 30960 30960 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+09-17 13:08:26.378 30960 30960 D WindowClient: Remove from mViews: DecorView@4eaf0d0[AccountLoginActivity], this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:27.292 30960 30960 I View    : Key down dispatch to android.widget.ListView{7f0eab9 VFED.VC.. .F....ID 0,0-1024,503 #7f080029 app:id/accountListView}, event = KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x8, repeatCount=0, eventTime=5946028099, downTime=5946028099, deviceId=1, source=0x101 }
+09-17 13:08:27.355 30960 30960 I View    : Key up dispatch to android.widget.ListView{7f0eab9 VFED.VC.. .F....ID 0,0-1024,503 #7f080029 app:id/accountListView}, event = KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x8, repeatCount=0, eventTime=5946028165, downTime=5946028099, deviceId=1, source=0x101 }
+09-17 13:08:27.370 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-17 13:08:27.393 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.Jitsi@a0746
+09-17 13:08:27.399 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().192 Current chat id: null
+09-17 13:08:27.401 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().203 Chat for id: null no longer exists
+09-17 13:08:27.403 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().192 Current chat id: null
+09-17 13:08:27.405 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().203 Chat for id: null no longer exists
+09-17 13:08:27.431 30960 30977 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-17 13:08:27.453 30960 30977 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-17 13:08:27.813 30960 30960 D WindowClient: Remove from mViews: DecorView@3440620[AccountsListActivity], this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:28.443 30960 31076 D Jitsi   : [376] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1703 Query for a UDP listening point
+09-17 13:08:28.444 30960 31076 D Jitsi   : [376] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1709 Will use proxy address
+09-17 13:08:28.445 30960 31076 D Jitsi   : [376] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1735 Returning LP android.gov.nist.javax.sip.ListeningPointImpl@358fa68 for transport [UDP] and 
+09-17 13:08:28.446 30960 31076 D libc-netbsd: [getaddrinfo]: mtk hostname=192.168.125.254; servname=(null); netid=0; mark=0
+09-17 13:08:28.446 30960 31076 D libc-netbsd: [getaddrinfo]: mtk ai_addrlen=0; ai_canonname=(null); ai_flags=4; ai_family=0
+09-17 13:08:28.486 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-17 13:08:28.490 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().192 Current chat id: null
+09-17 13:08:28.492 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.chat.ChatSessionManager.setCurrentChatId().203 Chat for id: null no longer exists
+09-17 13:08:28.537 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.539 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.541 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.543 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.545 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.547 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.550 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.setProtocolProvider().327 Registered listeners for ProtocolProviderServiceSipImpl(34234@192.168.125.254 (SIP))
+09-17 13:08:28.553 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.555 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.557 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.addAccountEventListener().375 Added change listener org.jitsi.android.gui.account.AccountsListAdapter@8e51eb7
+09-17 13:08:28.559 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.setProtocolProvider().327 Registered listeners for ProtocolProviderServiceSipImpl(33675@192.168.125.254 (SIP))
+09-17 13:08:28.563 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.565 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.567 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.569 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.572 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.574 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.577 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.addAccountEventListener().375 Added change listener org.jitsi.android.gui.account.AccountsListAdapter@8e51eb7
+09-17 13:08:28.579 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.setProtocolProvider().327 Registered listeners for ProtocolProviderServiceSipImpl(+867598204021@ims.ge.chinamobile.com (SIP))
+09-17 13:08:28.582 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.584 30960 30960 D SQLiteCursor: received count(*) from native_fill_window: 0
+09-17 13:08:28.586 30960 30960 D Jitsi   : [1] org.jitsi.android.gui.account.Account.addAccountEventListener().375 Added change listener org.jitsi.android.gui.account.AccountsListAdapter@8e51eb7
+09-17 13:08:28.596 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.contactlist.AddContactActivity@94101e1
+09-17 13:08:28.598 30960 30960 D WindowClient: Add to mViews: DecorView@d7f7a3d[AddContactActivity], this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:28.603 30960 30960 D ViewRootImpl[AddContactActivity]: hardware acceleration is enabled, this = ViewRoot{ae2d89 org.jitsi/org.jitsi.android.gui.contactlist.AddContactActivity,ident = 8}
+09-17 13:08:28.656 30960 30977 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-17 13:08:28.673 30960 30977 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-17 13:08:28.706 30960 31084 D Jitsi   : [384] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1703 Query for a UDP listening point
+09-17 13:08:28.707 30960 31084 D Jitsi   : [384] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1709 Will use proxy address
+09-17 13:08:28.710 30960 31084 D Jitsi   : [384] impl.protocol.sip.ProtocolProviderServiceSipImpl.getListeningPoint().1735 Returning LP android.gov.nist.javax.sip.ListeningPointImpl@358fa68 for transport [UDP] and 
+09-17 13:08:28.710 30960 31084 D libc-netbsd: [getaddrinfo]: mtk hostname=192.168.125.254; servname=(null); netid=0; mark=0
+09-17 13:08:28.711 30960 31084 D libc-netbsd: [getaddrinfo]: mtk ai_addrlen=0; ai_canonname=(null); ai_flags=4; ai_family=0
+09-17 13:08:30.054 30960 30960 D WindowClient: Add to mViews: android.widget.PopupWindow$PopupDecorView{f5e9b28 V.E...... ......I. 0,0-0,0}, this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:30.057 30960 30960 D ViewRootImpl[PopupWindow:891661a]: hardware acceleration is enabled, this = ViewRoot{77e7041 PopupWindow:891661a,ident = 9}
+09-17 13:08:30.077 30960 30977 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-17 13:08:30.081 30960 30977 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-17 13:08:31.598 30960 30960 D WindowClient: Remove from mViews: android.widget.PopupWindow$PopupDecorView{f5e9b28 V.E...... .......D 0,0-508,168}, this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:31.598 30960 30960 W InputEventReceiver: Attempted to finish an input event but the input event receiver has already been disposed.
+09-17 13:08:34.976 30960 30960 D WindowClient: Add to mViews: android.widget.PopupWindow$PopupDecorView{62e1559 V.E...... ......I. 0,0-0,0}, this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:34.979 30960 30960 D ViewRootImpl[PopupWindow:93a7ea3]: hardware acceleration is enabled, this = ViewRoot{7f6651e PopupWindow:93a7ea3,ident = 10}
+09-17 13:08:35.004 30960 30977 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-17 13:08:35.007 30960 30977 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-17 13:08:35.126 30960 30960 D WindowClient: Remove from mViews: android.widget.PopupWindow$PopupDecorView{62e1559 V.E...... .......D 0,0-508,101}, this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:35.170 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-17 13:08:35.236 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.DialogActivity@c9eca7e
+09-17 13:08:35.238 30960 30960 D WindowClient: Add to mViews: DecorView@c67c8ef[DialogActivity], this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:35.242 30960 30960 D ViewRootImpl[DialogActivity]: hardware acceleration is enabled, this = ViewRoot{4d64924 org.jitsi/org.jitsi.android.gui.DialogActivity,ident = 11}
+09-17 13:08:35.285 30960 30977 W libEGL  : [ANDROID_RECORDABLE] format: 1
+09-17 13:08:35.292 30960 30977 D mali_winsys: EGLint new_window_surface(egl_winsys_display*, void*, EGLSurface, EGLConfig, egl_winsys_surface**, egl_color_buffer_format*, EGLBoolean) returns 0x3000
+09-17 13:08:35.330 30960 30960 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+09-17 13:08:37.169 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to null
+09-17 13:08:37.279 30960 30960 D WindowClient: Remove from mViews: DecorView@c67c8ef[DialogActivity], this = android.view.WindowManagerGlobal@d7666f7
+09-17 13:08:37.289 30960 30960 I Jitsi   : [1] org.jitsi.android.JitsiApplication.setCurrentActivity().353 Current activity set to org.jitsi.android.gui.contactlist.AddContactActivity@94101e1
+09-17 13:08:37.317 30960 30960 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+09-17 13:08:37.363 30960 30960 W IInputConnectionWrapper: finishComposingText on inactive InputConnection
+09-17 13:08:44.285 30960 30960 E Jitsi   : [1] util.UtilActivator.uncaughtException().140 An uncaught exception occurred in thread=Thread[main,5,main] and message was: Could not execute method for android:onClick
+09-17 13:08:44.285 30960 30960 E Jitsi   : java.lang.IllegalStateException: Could not execute method for android:onClick
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4749)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.view.View.performClick(View.java:5675)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.view.View$PerformClick.run(View.java:22641)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.os.Handler.handleCallback(Handler.java:836)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.os.Looper.loop(Looper.java:203)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.app.ActivityThread.main(ActivityThread.java:6251)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+09-17 13:08:44.285 30960 30960 E Jitsi   : Caused by: java.lang.reflect.InvocationTargetException
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4744)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	... 9 more
+09-17 13:08:44.285 30960 30960 E Jitsi   : Caused by: java.lang.ClassCastException: java.lang.Object cannot be cast to net.java.sip.communicator.service.contactlist.MetaContactGroup
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	at org.jitsi.android.gui.contactlist.AddContactActivity.onAddClicked(AddContactActivity.java:180)
+09-17 13:08:44.285 30960 30960 E Jitsi   : 	... 11 more
+09-17 13:08:44.287 30960 30960 E Jitsi   : [1] org.jitsi.android.plugin.errorhandler.ExceptionHandler.uncaughtException().95 Uncaught exception occurred, killing the process...
+09-17 13:08:44.287 30960 30960 E Jitsi   : java.lang.IllegalStateException: Could not execute method for android:onClick
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4749)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.view.View.performClick(View.java:5675)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.view.View$PerformClick.run(View.java:22641)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.os.Handler.handleCallback(Handler.java:836)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.os.Handler.dispatchMessage(Handler.java:103)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.os.Looper.loop(Looper.java:203)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.app.ActivityThread.main(ActivityThread.java:6251)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1063)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:924)
+09-17 13:08:44.287 30960 30960 E Jitsi   : Caused by: java.lang.reflect.InvocationTargetException
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at java.lang.reflect.Method.invoke(Native Method)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at android.view.View$DeclaredOnClickListener.onClick(View.java:4744)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	... 9 more
+09-17 13:08:44.287 30960 30960 E Jitsi   : Caused by: java.lang.ClassCastException: java.lang.Object cannot be cast to net.java.sip.communicator.service.contactlist.MetaContactGroup
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	at org.jitsi.android.gui.contactlist.AddContactActivity.onAddClicked(AddContactActivity.java:180)
+09-17 13:08:44.287 30960 30960 E Jitsi   : 	... 11 more
+09-17 13:08:44.299 30960 30960 I Process : Sending signal. PID: 30960 SIG: 9

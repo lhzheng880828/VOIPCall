@@ -18,22 +18,34 @@
 package org.jitsi.android.gui.call;
 
 
-import android.content.res.*;
-import android.os.*;
-import android.view.*;
-import net.java.sip.communicator.service.protocol.*;
-import net.java.sip.communicator.service.protocol.media.*;
-import net.java.sip.communicator.util.*;
-import net.java.sip.communicator.util.call.*;
-import org.jitsi.*;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.service.neomedia.*;
-import org.jitsi.service.osgi.*;
+import android.content.res.Resources;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
-import java.net.*;
-import java.util.*;
-import java.util.List; // Disambiguation
+import net.java.sip.communicator.service.protocol.Call;
+import net.java.sip.communicator.service.protocol.CallConference;
+import net.java.sip.communicator.service.protocol.CallPeer;
+import net.java.sip.communicator.service.protocol.TransportProtocol;
+import net.java.sip.communicator.service.protocol.media.CallPeerMediaHandler;
+import net.java.sip.communicator.service.protocol.media.MediaAwareCallPeer;
+import net.java.sip.communicator.util.GuiUtils;
+import net.java.sip.communicator.util.call.CallManager;
+
+import org.jitsi.R;
+import org.jitsi.android.gui.util.ViewUtil;
+import org.jitsi.service.neomedia.MediaStream;
+import org.jitsi.service.neomedia.MediaStreamStats;
+import org.jitsi.service.neomedia.MediaType;
+import org.jitsi.service.neomedia.SrtpControl;
+import org.jitsi.service.neomedia.StreamConnector;
+import org.jitsi.service.neomedia.ZrtpControl;
+import org.jitsi.service.osgi.OSGiDialogFragment;
+
+import java.net.InetSocketAddress;
+import java.util.Date;
+import java.util.List;
 
 /**
  * Dialog fragment displaying technical call information.
@@ -510,9 +522,9 @@ public class CallInfoDialogFragment
 
         if(mediaType == MediaType.VIDEO)
         {
-            Dimension downloadVideoSize =
+            java.awt.Dimension downloadVideoSize =
                     mediaStreamStats.getDownloadVideoSize();
-            Dimension uploadVideoSize = mediaStreamStats.getUploadVideoSize();
+            java.awt.Dimension uploadVideoSize = mediaStreamStats.getUploadVideoSize();
             // Checks that at least one video stream is active.
             if(downloadVideoSize != null || uploadVideoSize != null)
             {
@@ -793,7 +805,7 @@ public class CallInfoDialogFragment
      * @return The String representation of the video width and height, or a
      * String with "Not Available (N.A.)" if the videoSize is null.
      */
-    private String videoSizeToString(Dimension videoSize)
+    private String videoSizeToString(java.awt.Dimension videoSize)
     {
         if(videoSize == null)
         {

@@ -167,7 +167,7 @@ public class AndroidEncoder
             return EMPTY_FORMATS;
 
         VideoFormat inputVideoFormat = (VideoFormat) inputFormat;
-        Dimension size = inputVideoFormat.getSize();
+        java.awt.Dimension size = inputVideoFormat.getSize();
         float frameRate = inputVideoFormat.getFrameRate();
 
         return new VideoFormat[]
@@ -247,7 +247,7 @@ public class AndroidEncoder
          * Consequently, the size of the output is equal to the size of the
          * input.
          */
-        Dimension size = null;
+        java.awt.Dimension size = null;
 
         if (inputFormat != null)
             size = ((VideoFormat) inputFormat).getSize();
@@ -287,13 +287,13 @@ public class AndroidEncoder
             throw new ResourceUnavailableException("Output format not set");
 
         VideoFormat vformat = (VideoFormat) outputFormat;
-        Dimension outSize = vformat.getSize();
-        Dimension inSize = vformat.getSize();
+        java.awt.Dimension outSize = vformat.getSize();
+        java.awt.Dimension inSize = vformat.getSize();
 
         if(outSize == null && inSize == null)
             throw new ResourceUnavailableException("Size not set");
 
-        Dimension size = outSize == null ? inSize : outSize;
+        java.awt.Dimension size = outSize == null ? inSize : outSize;
         MediaFormat format = MediaFormat.createVideoFormat(
                 codecType,
                 size.width, size.height);

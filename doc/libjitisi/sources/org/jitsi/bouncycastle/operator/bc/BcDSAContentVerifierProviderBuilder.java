@@ -1,0 +1,30 @@
+package org.jitsi.bouncycastle.operator.bc;
+
+import java.io.IOException;
+import org.jitsi.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.jitsi.bouncycastle.asn1.x509.SubjectPublicKeyInfo;
+import org.jitsi.bouncycastle.crypto.Signer;
+import org.jitsi.bouncycastle.crypto.params.AsymmetricKeyParameter;
+import org.jitsi.bouncycastle.crypto.signers.DSADigestSigner;
+import org.jitsi.bouncycastle.crypto.signers.DSASigner;
+import org.jitsi.bouncycastle.crypto.util.PublicKeyFactory;
+import org.jitsi.bouncycastle.operator.DigestAlgorithmIdentifierFinder;
+import org.jitsi.bouncycastle.operator.OperatorCreationException;
+
+public class BcDSAContentVerifierProviderBuilder extends BcContentVerifierProviderBuilder {
+    private DigestAlgorithmIdentifierFinder digestAlgorithmFinder;
+
+    public BcDSAContentVerifierProviderBuilder(DigestAlgorithmIdentifierFinder digestAlgorithmIdentifierFinder) {
+        this.digestAlgorithmFinder = digestAlgorithmIdentifierFinder;
+    }
+
+    /* access modifiers changed from: protected */
+    public Signer createSigner(AlgorithmIdentifier algorithmIdentifier) throws OperatorCreationException {
+        return new DSADigestSigner(new DSASigner(), this.digestProvider.get(this.digestAlgorithmFinder.find(algorithmIdentifier)));
+    }
+
+    /* access modifiers changed from: protected */
+    public AsymmetricKeyParameter extractKeyParameters(SubjectPublicKeyInfo subjectPublicKeyInfo) throws IOException {
+        return PublicKeyFactory.createKey(subjectPublicKeyInfo);
+    }
+}

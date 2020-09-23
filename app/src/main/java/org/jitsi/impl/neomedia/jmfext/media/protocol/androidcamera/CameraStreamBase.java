@@ -17,19 +17,21 @@
  */
 package org.jitsi.impl.neomedia.jmfext.media.protocol.androidcamera;
 
-import android.graphics.*;
+import android.graphics.ImageFormat;
 import android.hardware.Camera;
 
-import net.java.sip.communicator.util.*;
+import net.java.sip.communicator.util.Logger;
 
-import org.jitsi.android.util.java.awt.*;
-import org.jitsi.impl.neomedia.device.util.*;
-import org.jitsi.impl.neomedia.jmfext.media.protocol.*;
+import org.jitsi.android.util.java.awt.Dimension;
+import org.jitsi.impl.neomedia.device.util.AndroidCamera;
+import org.jitsi.impl.neomedia.device.util.CameraUtils;
+import org.jitsi.impl.neomedia.jmfext.media.protocol.AbstractPushBufferStream;
 
-import javax.media.*;
-import javax.media.control.*;
-import javax.media.format.*;
-import java.io.*;
+import java.io.IOException;
+
+import javax.media.Format;
+import javax.media.control.FormatControl;
+import javax.media.format.VideoFormat;
 
 /**
  * Base class for camera streams.
@@ -99,7 +101,7 @@ abstract class CameraStreamBase
             this.format = (VideoFormat) streamFormats[0];
 
             Camera.Parameters params = camera.getParameters();
-            Dimension size = format.getSize();
+            Dimension size = new Dimension(format.getSize().width, format.getSize().height);
             params.setPreviewSize(size.width, size.height);
             params.setPreviewFormat(ImageFormat.YV12);
             camera.setParameters(params);

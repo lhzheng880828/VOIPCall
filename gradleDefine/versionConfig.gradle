@@ -1,0 +1,37 @@
+ext {
+
+    depsVerison = [
+            ice4j : '1.0.0',
+            bouncycastle : '1.64'
+    ]
+
+    deps = [
+            //java-stubs
+            javaStubs : files('../distribution/java-stubs.jar'),
+            //fmj
+            fmj : files('../distribution/fmj.jar'),
+            //java rt.jar
+            rt : files('../distribution/rt.jar'),
+            //osgi
+            osgi : files('../distribution/osgi.core.jar'),
+            //jsonsimple
+            jsonSimple : files('../distribution/json-simple-1.1.1.jar'),
+            //jspeex
+            jspeex : files('../distribution/jspeex.jar'),
+            //netaddr
+            netaddr : files('../distribution/netaddr.jar'),
+            //bouncycastle
+            // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk16
+            //compile group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.46'
+
+            // https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on
+            bouncycastle : "org.bouncycastle:bcprov-jdk15on:$depsVerison.bouncycastle",
+            //bccontrib
+            bccontrib : files('../distribution/bccontrib.jar'),
+            //ice4j
+            ice4j : "org.jitsi:ice4j:$depsVerison.ice4j",
+
+
+    ]
+
+}

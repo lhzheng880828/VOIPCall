@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply from: '../gradleDefine/versionConfig.gradle'
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    // https://mvnrepository.com/artifact/com.sun.jna/jna
+    implementation group: 'com.sun.jna', name: 'jna', version: '3.0.9'
+    // https://mvnrepository.com/artifact/org.jitsi/zrtp4j-light
+    implementation group: 'org.jitsi', name: 'zrtp4j-light', version: '4.1.2'
+    // https://mvnrepository.com/artifact/ch.imvs/sdes4j
+    implementation group: 'ch.imvs', name: 'sdes4j', version: '1.1.5'
+
+
+    implementation project(':thirdLibs')
+    implementation deps.javaStubs
+    implementation deps.fmj
+    implementation deps.osgi
+    implementation deps.ice4j
+    //implementation deps.netaddr
+
+    implementation deps.jsonSimple
+    implementation deps.jspeex
+    //implementation deps.bccontrib
+    implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.64'
+// https://mvnrepository.com/artifact/org.bouncycastle/bcpkix-jdk15on
+    implementation group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.64'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+}

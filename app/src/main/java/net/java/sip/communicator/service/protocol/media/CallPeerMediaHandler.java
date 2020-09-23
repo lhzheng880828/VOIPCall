@@ -19,13 +19,14 @@ package net.java.sip.communicator.service.protocol.media;
 
 //import java.awt.*;
 
+import android.util.Log;
+
 import net.java.sip.communicator.service.protocol.CallPeerState;
 import net.java.sip.communicator.service.protocol.OperationFailedException;
 import net.java.sip.communicator.service.protocol.OperationSetVideoTelephony;
 import net.java.sip.communicator.service.protocol.ProtocolProviderFactory;
 import net.java.sip.communicator.util.Logger;
 
-import org.jitsi.android.util.java.awt.Component;
 import org.jitsi.service.neomedia.AudioMediaStream;
 import org.jitsi.service.neomedia.MediaDirection;
 import org.jitsi.service.neomedia.MediaStream;
@@ -51,6 +52,7 @@ import org.jitsi.util.event.VideoEvent;
 import org.jitsi.util.event.VideoListener;
 import org.jitsi.util.event.VideoNotifierSupport;
 
+import java.awt.Component;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.net.InetSocketAddress;
@@ -955,10 +957,11 @@ public abstract class CallPeerMediaHandler<T extends MediaAwareCallPeer<?,?,?>>
     {
         MediaStream videoStream = getStream(MediaType.VIDEO);
 
-        return
+        /*return
             ((videoStream == null) || !isLocalVideoTransmissionEnabled())
                 ? null
-                : ((VideoMediaStream) videoStream).getLocalVisualComponent();
+                : ((VideoMediaStream) videoStream).getLocalVisualComponent();*/
+        return null;
     }
 
     public MediaHandler getMediaHandler()
@@ -1143,7 +1146,7 @@ public abstract class CallPeerMediaHandler<T extends MediaAwareCallPeer<?,?,?>>
     public List<Component> getVisualComponents()
     {
         MediaStream videoStream = getStream(MediaType.VIDEO);
-        List<Component> visualComponents;
+        List<Component> visualComponents = Collections.emptyList();
 
         if (videoStream == null)
             visualComponents = Collections.emptyList();
@@ -1188,6 +1191,11 @@ public abstract class CallPeerMediaHandler<T extends MediaAwareCallPeer<?,?,?>>
                                      boolean            masterStream)
         throws OperationFailedException
     {
+        try {
+            throw new Exception("Call Stack Trace");
+        } catch (Exception e) {
+            Log.i("lhzheng@grandstream.com", "initStream", e);
+        }
         MediaType mediaType = device.getMediaType();
         if (logger.isDebugEnabled())
             logger.debug("Initializing " + mediaType + " stream for "

@@ -22,7 +22,7 @@ import android.util.*;
 import android.view.*;
 import android.widget.*;
 import net.java.sip.communicator.util.*;
-import org.jitsi.android.util.java.awt.*;
+import java.awt.*;
 
 
 /**

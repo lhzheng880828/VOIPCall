@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply from: '../gradleDefine/versionConfig.gradle'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -50,17 +50,22 @@ android {
 }
 
 dependencies {
-    implementation project(":serviceapi")
+    implementation project(":libmedia")
+    implementation project(":thirdLibs")
     implementation 'androidx.fragment:fragment:1.1.0'
     implementation 'androidx.multidex:multidex:2.0.0'
     implementation files('libs/dns-2.0.8.jar')
     //implementation files('libs/sdp-api-1.0.jar')
-    implementation files('libs/java-sdp-nist-bridge-1.1.jar')
+    //implementation files('libs/java-sdp-nist-bridge-1.1.jar')
     //implementation files('libs/sip-api-1.2-1.2.jar')
-    implementation files('libs/sdes4j-1.1.3.jar')
+    //implementation files('libs/sdes4j-1.1.3.jar')
+    implementation group: 'ch.imvs', name: 'sdes4j', version: '1.1.5'
+
     implementation files('libs/httpclient-osgi-4.2.3.jar')
     implementation files('libs/httpcore-osgi-4.2.3.jar')
-    implementation files('libs/json-simple-1.1.1.jar')
+    //implementation files('libs/json-simple-1.1.1.jar')
+    implementation deps.jsonSimple
+
     // https://mvnrepository.com/artifact/javax.sip/jain-sip-ri
     compileOnly group: 'javax.sip', name: 'jain-sip-ri', version: '1.3.0-91'
     // https://mvnrepository.com/artifact/javax.sip/android-jain-sip-ri
@@ -69,8 +74,10 @@ dependencies {
     implementation 'pub.devrel:easypermissions:3.0.0'
     //implementation files('libs/protocol.jar')
 
-    compile files('libs/bccontrib.jar')
-    compile files('libs/bouncycastle.jar')
+    //compile files('libs/bccontrib.jar')
+    //implementation deps.bccontrib
+    //compile files('libs/bouncycastle.jar')
+    //implementation deps.bouncycastle
     compile files('libs/browserlauncher.jar')
     compile files('libs/callhistory.jar')
     compile files('libs/certificate.jar')
@@ -86,30 +93,39 @@ dependencies {
     //compile files('libs/httpclient.jar')
     //compile files('libs/httpcore.jar')
     //compile files('libs/httputil.jar')
-    compile files('libs/java-stubs.jar')
-    compile files('libs/libjitsi.jar')
-    compile files('libs/log4j-1.2.8.jar')
-    compile files('libs/metahistory.jar')
-    compile files('libs/msghistory.jar')
-    compile files('libs/muc.jar')
-    compile files('libs/netaddr.jar')
-    compile files('libs/notification-service.jar')
-    compile files('libs/notification-wiring.jar')
-    compile files('libs/osgi.core.jar')
-    compile files('libs/otr.jar')
-    compile files('libs/plugin-loggingutils.jar')
+    implementation deps.javaStubs
+    //compile files('libs/libjitsi.jar')
+    implementation deps.fmj
+    implementation files('libs/log4j-1.2.8.jar')
+    implementation files('libs/metahistory.jar')
+    implementation files('libs/msghistory.jar')
+    implementation files('libs/muc.jar')
+    //compile files('libs/netaddr.jar')
+    implementation deps.ice4j
+    implementation files('libs/notification-service.jar')
+    implementation files('libs/notification-wiring.jar')
+    //compile files('libs/osgi.core.jar')
+    implementation deps.osgi
+    implementation files('libs/otr.jar')
+    implementation files('libs/plugin-loggingutils.jar')
     //compile files('libs/protocol.jar')
-    compile files('libs/replacement.jar')
-    compile files('libs/resourcemanager.jar')
+    implementation files('libs/replacement.jar')
+    implementation files('libs/resourcemanager.jar')
    // compile files('libs/sdes4j.jar')
-    compile files('libs/smack-sasl.jar')
-    compile files('libs/sysactivitynotifications.jar')
-    compile files('libs/systray-service.jar')
-    compile files('libs/ui-service.jar')
-    compile files('libs/updateservice.jar')
+    implementation files('libs/smack-sasl.jar')
+    implementation files('libs/sysactivitynotifications.jar')
+    implementation files('libs/systray-service.jar')
+    implementation files('libs/ui-service.jar')
+    implementation files('libs/updateservice.jar')
     //compile files('libs/util.jar')
-    compile files('libs/zrtp4j.jar')
-    compile files('libs/smack-3.1.100.jar')
+    //compile files('libs/zrtp4j.jar')
+    implementation group: 'org.jitsi', name: 'zrtp4j-light', version: '4.1.2'
+
+    implementation files('libs/smack-3.1.100.jar')
     //compile files('libs/nistsip.jar')
+
+    // https://mvnrepository.com/artifact/javax.jmdns/jmdns
+    implementation group: 'javax.jmdns', name: 'jmdns', version: '3.4.1'
+
 
 }

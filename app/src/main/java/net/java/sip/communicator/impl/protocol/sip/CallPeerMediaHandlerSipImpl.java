@@ -244,6 +244,13 @@ public class CallPeerMediaHandlerSipImpl
             receiveQualityPreset = qualityControls.getRemoteSendMaxPreset();
         }
 
+        //add by lhzheng@grandstream.cn, 添加默认的发送及接收质量参数
+        if (sendQualityPreset==null){
+            sendQualityPreset = QualityPreset.SD_QUALITY;
+            receiveQualityPreset = QualityPreset.SD_QUALITY;
+        }
+
+
         for (MediaType mediaType : new MediaType[] { MediaType.AUDIO , MediaType.VIDEO})
         {
             MediaDevice dev = getDefaultDevice(mediaType);
@@ -1386,6 +1393,7 @@ public class CallPeerMediaHandlerSipImpl
         throws OperationFailedException,
                IllegalArgumentException
     {
+        logger.debug("200 OK sdp String = "+answer);
         processAnswer(SdpUtils.parseSdpString(answer));
     }
 

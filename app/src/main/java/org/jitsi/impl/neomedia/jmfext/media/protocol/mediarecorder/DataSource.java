@@ -17,29 +17,42 @@
  */
 package org.jitsi.impl.neomedia.jmfext.media.protocol.mediarecorder;
 
-import java.io.*;
-import java.util.*;
-
-import javax.media.*;
-import javax.media.control.*;
-import javax.media.format.*;
-import javax.media.protocol.*;
-
-import org.jitsi.android.*;
-import org.jitsi.android.util.java.awt.*;
-import net.java.sip.communicator.util.*;
-
-import org.jitsi.impl.neomedia.codec.*;
-import org.jitsi.impl.neomedia.codec.video.h264.*;
-import org.jitsi.impl.neomedia.device.util.*;
-import org.jitsi.impl.neomedia.jmfext.media.protocol.*;
-import org.jitsi.service.neomedia.codec.*;
-
-import android.hardware.*;
-import android.media.*;
-import android.net.*;
+import android.hardware.Camera;
+import android.media.MediaRecorder;
+import android.net.LocalServerSocket;
+import android.net.LocalSocket;
 import android.os.Process;
-import android.view.*;
+import android.view.Surface;
+
+import net.java.sip.communicator.util.Logger;
+
+import org.jitsi.android.JitsiApplication;
+import org.jitsi.impl.neomedia.codec.FFmpeg;
+import org.jitsi.impl.neomedia.codec.video.h264.DePacketizer;
+import org.jitsi.impl.neomedia.device.util.AndroidCamera;
+import org.jitsi.impl.neomedia.device.util.CameraUtils;
+import org.jitsi.impl.neomedia.jmfext.media.protocol.AbstractPushBufferCaptureDevice;
+import org.jitsi.impl.neomedia.jmfext.media.protocol.AbstractPushBufferStream;
+import org.jitsi.service.neomedia.codec.Constants;
+
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.media.Buffer;
+import javax.media.Format;
+import javax.media.MediaLocator;
+import javax.media.control.FormatControl;
+import javax.media.format.VideoFormat;
+import javax.media.protocol.BufferTransferHandler;
+import javax.media.protocol.PushBufferStream;
 
 /**
  * Implements <tt>PushBufferDataSource</tt> and <tt>CaptureDevice</tt> using
@@ -498,7 +511,7 @@ public class DataSource
          * Camera.Parameters.setPictureSize(int,int) saves the day
          * in some cases.
          */
-        Dimension videoSize = videoFormat.getSize();
+        java.awt.Dimension videoSize = videoFormat.getSize();
         if ((videoSize != null)
                 && (videoSize.height > 0)
                 && (videoSize.width > 0))
