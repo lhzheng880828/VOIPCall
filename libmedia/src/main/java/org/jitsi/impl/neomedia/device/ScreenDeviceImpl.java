@@ -6,13 +6,13 @@
  */
 package org.jitsi.impl.neomedia.device;
 
-import org.jitsi.android.util.java.awt.Dimension;
-import org.jitsi.android.util.java.awt.Point;
 import org.jitsi.android.util.java.awt.Rectangle;
 import org.jitsi.service.neomedia.device.ScreenDevice;
 
+import java.awt.Dimension;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.Point;
 
 /**
  * Implementation of <tt>ScreenDevice</tt>.

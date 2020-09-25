@@ -140,7 +140,7 @@ public class SurfaceRenderer
         return false;
     }
 
-    private class SurfaceComponent
+    private static class SurfaceComponent
     extends java.awt.Component
         implements ViewAccessor
     {

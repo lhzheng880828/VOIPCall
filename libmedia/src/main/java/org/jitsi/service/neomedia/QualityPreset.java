@@ -6,9 +6,9 @@
  */
 package org.jitsi.service.neomedia;
 
-//import java.awt.*;
+import java.awt.*;
 
-import org.jitsi.android.util.java.awt.Dimension;
+//import org.jitsi.android.util.java.awt.Dimension;
 
 /**
  * Predefined quality preset used to specify some video settings during an
@@ -46,7 +46,7 @@ public class QualityPreset
     /**
      * The resolution to use.
      */
-    private final org.jitsi.android.util.java.awt.Dimension resolution;
+    private final Dimension resolution;
 
     /**
      * Initializes a new quality preset with a specific <tt>resolution</tt> and

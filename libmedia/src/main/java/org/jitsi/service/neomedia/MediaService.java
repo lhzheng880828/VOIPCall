@@ -6,13 +6,13 @@
  */
 package org.jitsi.service.neomedia;
 
-import org.jitsi.android.util.java.awt.Point;
 import org.jitsi.service.neomedia.codec.EncodingConfiguration;
 import org.jitsi.service.neomedia.device.MediaDevice;
 import org.jitsi.service.neomedia.device.ScreenDevice;
 import org.jitsi.service.neomedia.format.MediaFormat;
 import org.jitsi.service.neomedia.format.MediaFormatFactory;
 
+import java.awt.Point;
 import java.beans.PropertyChangeListener;
 import java.util.Iterator;
 import java.util.List;

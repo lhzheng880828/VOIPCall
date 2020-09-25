@@ -8,7 +8,6 @@ package org.jitsi.impl.neomedia.device;
 
 //import java.awt.*;
 
-import org.jitsi.android.util.java.awt.Dimension;
 import org.jitsi.impl.neomedia.MediaServiceImpl;
 import org.jitsi.impl.neomedia.MediaUtils;
 import org.jitsi.impl.neomedia.NeomediaServiceUtils;
@@ -24,6 +23,7 @@ import org.jitsi.service.neomedia.device.ScreenDevice;
 import org.jitsi.service.neomedia.format.MediaFormat;
 import org.jitsi.util.Logger;
 
+import java.awt.Dimension;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;

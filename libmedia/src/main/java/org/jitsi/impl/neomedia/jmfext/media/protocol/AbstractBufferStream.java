@@ -22,7 +22,7 @@ import org.jitsi.util.*;
  *
  * @author Lyubomir Marinov
  */
-abstract class AbstractBufferStream<T extends DataSource>
+public abstract class AbstractBufferStream<T extends DataSource>
     extends AbstractControls
     implements SourceStream
 {

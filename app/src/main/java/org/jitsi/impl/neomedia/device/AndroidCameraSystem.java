@@ -115,6 +115,7 @@ public class AndroidCameraSystem
                 previewSizes = params.getSupportedPreviewSizes();
             }
 
+            //Video sizes supported by androidcamera:0/1: 176x144, 320x240, 352x288, 480x320, 640x480,
             logger.info(
                     "Video sizes supported by "
                             + locator.toString()
@@ -140,7 +141,7 @@ public class AndroidCameraSystem
             //SUPPORTED_SIZES = array;
 
             List<Integer> camFormats = params.getSupportedPreviewFormats();
-
+            //Image formats supported by androidcamera:0/1: NV21, YV12
             logger.info(
                 "Image formats supported by "
                     + locator.toString()

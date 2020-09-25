@@ -17,23 +17,35 @@
  */
 package org.jitsi.impl.neomedia.jmfext.media.protocol.audiorecord;
 
-import java.io.*;
-
-import javax.media.*;
-import javax.media.control.*;
-
-import android.annotation.*;
-import android.media.*;
-import android.media.audiofx.*;
-
-import android.os.*;
+import android.annotation.TargetApi;
+import android.media.AudioFormat;
+import android.media.AudioRecord;
+import android.media.MediaRecorder;
+import android.media.audiofx.AcousticEchoCanceler;
+import android.media.audiofx.AudioEffect;
+import android.media.audiofx.AutomaticGainControl;
+import android.media.audiofx.NoiseSuppressor;
+import android.os.Build;
 import android.os.Process;
-import org.jitsi.android.gui.util.*;
-import org.jitsi.impl.neomedia.device.*;
-import org.jitsi.impl.neomedia.jmfext.media.protocol.*;
-import net.java.sip.communicator.util.*;
-import org.jitsi.impl.neomedia.*;
-import org.jitsi.service.neomedia.*;
+
+import net.java.sip.communicator.util.Logger;
+
+import org.jitsi.android.gui.util.AndroidUtils;
+import org.jitsi.impl.neomedia.MediaServiceImpl;
+import org.jitsi.impl.neomedia.NeomediaActivator;
+import org.jitsi.impl.neomedia.device.AudioSystem;
+import org.jitsi.impl.neomedia.jmfext.media.protocol.AbstractBufferStream;
+import org.jitsi.impl.neomedia.jmfext.media.protocol.AbstractPullBufferCaptureDevice;
+import org.jitsi.impl.neomedia.jmfext.media.protocol.AbstractPullBufferStream;
+import org.jitsi.service.neomedia.BasicVolumeControl;
+
+import java.io.IOException;
+
+import javax.media.Buffer;
+import javax.media.Format;
+import javax.media.GainControl;
+import javax.media.MediaLocator;
+import javax.media.control.FormatControl;
 
 /**
  * Implements an audio <tt>CaptureDevice</tt> using {@link AudioRecord}.
@@ -516,7 +528,7 @@ public class DataSource
             }
             buffer.setOffset(0);
 
-            // Apply software gain.
+            // Apply software gain.软件增益,音量增强
             if (gainControl != null)
             {
                 BasicVolumeControl.applyGain(

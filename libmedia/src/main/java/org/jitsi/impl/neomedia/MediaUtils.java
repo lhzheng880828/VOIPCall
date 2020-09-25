@@ -6,7 +6,6 @@
  */
 package org.jitsi.impl.neomedia;
 
-import org.jitsi.android.util.java.awt.Dimension;
 import org.jitsi.impl.neomedia.codec.EncodingConfigurationImpl;
 import org.jitsi.impl.neomedia.codec.video.h264.JNIEncoder;
 import org.jitsi.impl.neomedia.device.ScreenDeviceImpl;
@@ -23,6 +22,7 @@ import org.jitsi.service.neomedia.device.ScreenDevice;
 import org.jitsi.service.neomedia.format.MediaFormat;
 import org.jitsi.util.OSUtils;
 
+import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;

@@ -185,7 +185,7 @@ public class VideoMediaDeviceSession
      * in desktop streaming/sharing session when sender desktop is bigger
      * than remote ones.
      */
-    private org.jitsi.android.util.java.awt.Dimension outputSize;
+    private java.awt.Dimension outputSize;
 
     /**
      * The <tt>SwScale</tt> inserted into the codec chain of the
@@ -436,7 +436,7 @@ public class VideoMediaDeviceSession
             }
             else
             {
-                org.jitsi.android.util.java.awt.Dimension videoSize = deviceConfig.getVideoSize();
+                java.awt.Dimension videoSize = deviceConfig.getVideoSize();
 
                 // if we have an output size that is smaller than our current
                 // settings, respect that size
@@ -1583,7 +1583,7 @@ public class VideoMediaDeviceSession
 
         if (!equal)
         {
-            outputSize = new org.jitsi.android.util.java.awt.Dimension(size.width, size.height);
+            outputSize = new java.awt.Dimension(size.width, size.height);
             outputSizeChanged = true;
         }
     }
@@ -1613,7 +1613,7 @@ public class VideoMediaDeviceSession
              * QCIF (176x144).
              */
             if (outputSize == null)
-                outputSize = new org.jitsi.android.util.java.awt.Dimension(176, 144);
+                outputSize = new java.awt.Dimension(176, 144);
         }
 
         /*

@@ -405,7 +405,7 @@ public class SettingsActivity
             resList.setEntryValues(resolutionValues);
 
             // Init current resolution
-            Dimension currentResDim = deviceConfig.getVideoSize();
+            java.awt.Dimension currentResDim = deviceConfig.getVideoSize();
             Dimension autoResDim = new Dimension(
                     DeviceConfiguration.DEFAULT_VIDEO_WIDTH,
                     DeviceConfiguration.DEFAULT_VIDEO_HEIGHT);
@@ -415,7 +415,8 @@ public class SettingsActivity
             }
             else
             {
-                resList.setValue(resToStr(deviceConfig.getVideoSize()));
+                java.awt.Dimension videoSize = deviceConfig.getVideoSize();
+                resList.setValue(resToStr(new Dimension(videoSize.width, videoSize.height)));
             }
 
             //Frame rate
@@ -725,7 +726,7 @@ public class SettingsActivity
                 // Video resolution
                 String resStr = shPreferences.getString(P_KEY_VIDEO_RES, null);
                 Dimension videoRes = resoultionForStr(resStr);
-                deviceConfig.setVideoSize(videoRes);
+                deviceConfig.setVideoSize(new java.awt.Dimension(videoRes.width, videoRes.height));
             }
             else if( key.equals(P_KEY_VIDEO_LIMIT_FPS)
                      || key.equals(P_KEY_VIDEO_TARGET_FPS) )

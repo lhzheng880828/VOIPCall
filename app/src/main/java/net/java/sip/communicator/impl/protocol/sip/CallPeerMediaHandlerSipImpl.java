@@ -695,6 +695,13 @@ public class CallPeerMediaHandlerSipImpl
                         : null;
                 QualityPreset receiveQualityPreset
                     = qualityControls.getRemoteSendMaxPreset();
+                //add by lhzheng@grandstream.cn
+                if (sendQualityPreset == null){
+                    sendQualityPreset = QualityPreset.SD_QUALITY;
+                }
+                if (receiveQualityPreset == null){
+                    receiveQualityPreset = QualityPreset.SD_QUALITY;
+                }
 
                 mutuallySupportedFormats
                     = intersectFormats(

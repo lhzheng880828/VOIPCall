@@ -662,7 +662,7 @@ public class Video4Linux2Stream
             if (size == null)
             {
                 // if there is no size in the format, respect settings
-                org.jitsi.android.util.java.awt.Dimension videoSize
+                java.awt.Dimension videoSize
                     = NeomediaServiceUtils
                         .getMediaServiceImpl()
                             .getDeviceConfiguration()

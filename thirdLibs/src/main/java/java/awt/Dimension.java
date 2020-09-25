@@ -39,4 +39,12 @@ public class Dimension {
     public int hashCode() {
         return (this.width << 16) | (this.height >> 16);
     }
+
+    @Override
+    public String toString() {
+        return "Dimension{" +
+                "height=" + height +
+                ", width=" + width +
+                '}';
+    }
 }

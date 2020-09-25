@@ -325,7 +325,7 @@ public class DeviceConfiguration
     /**
      * The current resolution settings.
      */
-    private org.jitsi.android.util.java.awt.Dimension videoSize;
+    private java.awt.Dimension videoSize;
 
     /**
      * Initializes a new <tt>DeviceConfiguration</tt> instance.
@@ -893,7 +893,7 @@ public class DeviceConfiguration
      *
      * @return the video size set on this <tt>DeviceConfiguration</tt>
      */
-    public org.jitsi.android.util.java.awt.Dimension getVideoSize()
+    public java.awt.Dimension getVideoSize()
     {
         if(videoSize == null)
         {
@@ -907,7 +907,7 @@ public class DeviceConfiguration
                 width = cfg.getInt(PROP_VIDEO_WIDTH, width);
             }
 
-            videoSize = new org.jitsi.android.util.java.awt.Dimension(width, height);
+            videoSize = new java.awt.Dimension(width, height);
         }
         return videoSize;
     }
@@ -1268,7 +1268,7 @@ public class DeviceConfiguration
      * @param videoSize the video size to be set on this
      * <tt>DeviceConfiguration</tt>
      */
-    public void setVideoSize(org.jitsi.android.util.java.awt.Dimension videoSize)
+    public void setVideoSize(java.awt.Dimension videoSize)
     {
         ConfigurationService cfg = LibJitsi.getConfigurationService();
 

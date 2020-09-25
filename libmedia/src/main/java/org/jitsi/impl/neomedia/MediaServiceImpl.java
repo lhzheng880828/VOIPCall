@@ -10,7 +10,6 @@ import com.sun.media.util.Registry;
 
 import org.jitsi.android.util.java.awt.Component;
 import org.jitsi.android.util.java.awt.Dimension;
-import org.jitsi.android.util.java.awt.Point;
 import org.jitsi.android.util.java.awt.Rectangle;
 import org.jitsi.android.util.java.awt.Window;
 import org.jitsi.android.util.java.awt.event.HierarchyListener;
@@ -62,10 +61,10 @@ import org.jitsi.service.resources.ResourceManagementService;
 import org.jitsi.util.Logger;
 import org.jitsi.util.OSUtils;
 import org.jitsi.util.event.PropertyChangeNotifier;
-//import org.jitsi.util.swing.VideoContainer;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
+import java.awt.Point;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.File;
@@ -93,6 +92,8 @@ import javax.media.UnsupportedPlugInException;
 import javax.media.control.TrackControl;
 import javax.media.format.RGBFormat;
 import javax.media.protocol.DataSource;
+
+//import org.jitsi.util.swing.VideoContainer;
 
 /**
  * Implements <tt>MediaService</tt> for JMF.
@@ -1429,7 +1430,7 @@ public class MediaServiceImpl
         String split[] = remainder.split(",");
         int index
             = Integer.parseInt(
-                    ((split != null) && (split.length > 1))
+                    ((split.length > 1))
                         ? split[0]
                         : remainder);
 

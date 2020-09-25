@@ -6,7 +6,6 @@
  */
 package org.jitsi.impl.neomedia;
 
-import org.jitsi.android.util.java.awt.Point;
 import org.jitsi.android.util.java.awt.Rectangle;
 import org.jitsi.impl.neomedia.control.ImgStreamingControl;
 import org.jitsi.impl.neomedia.device.DeviceConfiguration;
@@ -33,6 +32,7 @@ import org.jitsi.util.event.VideoNotifierSupport;
 
 import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Point;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -80,6 +80,8 @@ public class VideoMediaStreamImpl
      * @return maximum resolution array (first element is send, second one is
      * recv). Elements could be null if image attribute is not present or if
      * resolution is a wildcard.
+     *      a=fmtp:99 profile-level-id=4D001E; packetization-mode=1
+     *     a=imageattr:99 send [x=640,y=480] recv [x=640,y=480]
      */
     public static java.awt.Dimension[] parseSendRecvResolution(String imgattr)
     {
@@ -120,9 +122,11 @@ public class VideoMediaStreamImpl
             while(m.find() && i < 2)
             {
                 val[i] = Integer.parseInt(token.substring(m.start(), m.end()));
+                i++;
             }
 
             res[0] = new java.awt.Dimension(val[0], val[1]);
+            logger.debug("send matched, resolution = "+res[0]);
         }
         else if(mRange.find()) /* try with range */
         {
@@ -155,9 +159,12 @@ public class VideoMediaStreamImpl
             while(m.find() && i < 2)
             {
                 val[i] = Integer.parseInt(token.substring(m.start(), m.end()));
+                i++;
             }
 
             res[1] = new java.awt.Dimension(val[0], val[1]);
+            logger.debug("receive matched, resolution = "+res[1]);
+
         }
         else if(mRange.find()) /* try with range */
         {
@@ -619,7 +626,7 @@ public class VideoMediaStreamImpl
                     {
                         if (fireVideoEvent(
                                 e.getType(),
-                                null,//e.getVisualComponent(),
+                                e.getVisualComponent(),
                                 e.getOrigin(),
                                 true))
                             e.consume();
@@ -705,7 +712,7 @@ public class VideoMediaStreamImpl
 
         return
             videoNotifierSupport.fireVideoEvent(
-                    type, /*visualComponent*/null, origin,
+                    type, visualComponent, origin,
                     wait);
     }
 
@@ -890,12 +897,13 @@ public class VideoMediaStreamImpl
 
                     if(res != null)
                     {
+                        for (Dimension dim: res){
+                            logger.debug("peer imgattr = "+dim);
+                        }
                         setOutputSize(res[1]);
 
-                        org.jitsi.android.util.java.awt.Dimension presetMaxSize =
-                                new org.jitsi.android.util.java.awt.Dimension(res[0].width, res[0].height);
                         qualityControl.setRemoteSendMaxPreset(
-                                new QualityPreset(presetMaxSize));
+                                new QualityPreset(res[0]));
                         qualityControl.setRemoteReceiveResolution(outputSize);
                         ((VideoMediaDeviceSession)getDeviceSession())
                             .setOutputSize(outputSize);
@@ -1130,8 +1138,8 @@ public class VideoMediaStreamImpl
 
                 if(res != null)
                 {
-                    org.jitsi.android.util.java.awt.Dimension presetMaxSize =
-                            new org.jitsi.android.util.java.awt.Dimension(res[0].width, res[0].height);
+                    java.awt.Dimension presetMaxSize =
+                            new java.awt.Dimension(res[0].width, res[0].height);
                     qualityControl.setRemoteSendMaxPreset(
                             new QualityPreset(presetMaxSize));
                     qualityControl.setRemoteReceiveResolution(res[1]);

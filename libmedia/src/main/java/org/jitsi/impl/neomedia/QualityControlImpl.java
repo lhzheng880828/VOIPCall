@@ -63,7 +63,7 @@ class QualityControlImpl
         {
             this.preset = preset;
 
-            org.jitsi.android.util.java.awt.Dimension resolution;
+            java.awt.Dimension resolution;
 
             if (logger.isInfoEnabled()
                     && (preset != null)
@@ -160,7 +160,7 @@ class QualityControlImpl
     {
         try
         {
-            setRemoteReceivePreset(new QualityPreset(res == null? null: new org.jitsi.android.util.java.awt.Dimension(res.width, res.height)));
+            setRemoteReceivePreset(new QualityPreset(res == null? null: new java.awt.Dimension(res.width, res.height)));
         }
         catch(OperationFailedException ofe)
         {

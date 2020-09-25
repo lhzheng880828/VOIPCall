@@ -17,18 +17,19 @@
  */
 package org.jitsi.impl.neomedia.jmfext.media.protocol.androidcamera;
 
-import android.hardware.*;
-import android.view.*;
+import android.hardware.Camera;
+import android.view.SurfaceHolder;
 
-import net.java.sip.communicator.util.*;
+import net.java.sip.communicator.util.Logger;
 
-import org.jitsi.impl.neomedia.codec.*;
-import org.jitsi.impl.neomedia.device.util.*;
+import org.jitsi.impl.neomedia.codec.AbstractCodec2;
+import org.jitsi.impl.neomedia.device.util.CameraUtils;
 
-import javax.media.*;
-import javax.media.control.*;
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.LinkedList;
+
+import javax.media.Buffer;
+import javax.media.control.FormatControl;
 
 /**
  * Video stream that captures frames using camera preview callbacks in YUV
@@ -150,6 +151,7 @@ public class PreviewStream
         {
             bufferQueue.addFirst(data);
         }
+        //org.jitsi.impl.neomedia.protocol.StreamSubstituteBufferTransferHandler
         transferHandler.transferData(this);
     }
 

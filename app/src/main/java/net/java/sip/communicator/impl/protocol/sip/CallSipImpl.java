@@ -582,6 +582,8 @@ public class CallSipImpl
     {
         Request invite = serverTran.getRequest();
 
+        logger.debug("peer invite request = "+invite);
+
         final CallPeerSipImpl peer
             = createCallPeerFor(serverTran, jainSipProvider);
 

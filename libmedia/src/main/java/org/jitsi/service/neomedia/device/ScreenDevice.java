@@ -6,7 +6,7 @@
  */
 package org.jitsi.service.neomedia.device;
 
-import org.jitsi.android.util.java.awt.*;
+import java.awt.*;
 
 /**
  * Represents a physical screen display.

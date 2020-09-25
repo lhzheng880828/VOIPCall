@@ -145,3 +145,35 @@ ReceivedCallActivity.(CallButtonClickedListener)answerCall
 									CallPeerMediaHandlerSipImpl.processFirstOffer(processUpdateOffer)
 										CallPeerMediaHandlerSipImpl.createMediaDescriptionsForAnswer
 											CallPeerMediaHandlerSipImpl.initStream
+											
+											
+本地接听，处理对端发送来的INVITE消息
+CallPeerMediaHandlerSipImpl.processFirstOffer
+    CallPeerMediaHandlerSipImpl.createMediaDescriptionsForAnswer
+    
+    
+通话界面，摄像头按钮切换调用流程，实际需要重新发一个invite请求给对端, 调用栈如下
+startedDirectionChanged:2096, MediaDeviceSession (org.jitsi.impl.neomedia.device)
+startedDirectionChanged:1882, VideoMediaDeviceSession (org.jitsi.impl.neomedia.device)
+stop:2183, MediaDeviceSession (org.jitsi.impl.neomedia.device)
+stop:2249, MediaStreamImpl (org.jitsi.impl.neomedia)
+setDirection:1836, MediaStreamImpl (org.jitsi.impl.neomedia)
+configureStream:717, MediaHandler (net.java.sip.communicator.service.protocol.media)
+initStream:976, MediaHandler (net.java.sip.communicator.service.protocol.media)
+initStream:1216, CallPeerMediaHandler (net.java.sip.communicator.service.protocol.media)
+doNonSynchronisedProcessAnswer:1623, CallPeerMediaHandlerSipImpl (net.java.sip.communicator.impl.protocol.sip)
+processAnswer:1430, CallPeerMediaHandlerSipImpl (net.java.sip.communicator.impl.protocol.sip)
+processAnswer:1404, CallPeerMediaHandlerSipImpl (net.java.sip.communicator.impl.protocol.sip)
+processInviteOK:848, CallPeerSipImpl (net.java.sip.communicator.impl.protocol.sip)
+processInviteOK:874, OperationSetBasicTelephonySipImpl (net.java.sip.communicator.impl.protocol.sip)
+processResponse:497, OperationSetBasicTelephonySipImpl (net.java.sip.communicator.impl.protocol.sip)
+processResponse:925, ProtocolProviderServiceSipImpl (net.java.sip.communicator.impl.protocol.sip)
+processResponse:839, SipStackSharing (net.java.sip.communicator.impl.protocol.sip)
+deliverResponseEvent:317, EventScanner (android.gov.nist.javax.sip)
+deliverEvent:148, EventScanner (android.gov.nist.javax.sip)
+run:513, EventScanner (android.gov.nist.javax.sip)
+run:761, Thread (java.lang)
+
+
+远端画面相关事件在MediaStreamImpl.update 处理 ， 切换视频时，经常出现远端画面消失，是由于  update中处理到了TimeoutEvent将Player
+dispose掉导致，但是不处理导致界面卡死。 

@@ -323,7 +323,7 @@ public class QuickTimeStream
                 else
                 {
 
-                       org.jitsi.android.util.java.awt.Dimension videoSize = NeomediaServiceUtils
+                       java.awt.Dimension videoSize = NeomediaServiceUtils
                             .getMediaServiceImpl()
                                 .getDeviceConfiguration()
                                     .getVideoSize();
@@ -657,7 +657,7 @@ public class QuickTimeStream
         if (size == null)
         {
 
-              org.jitsi.android.util.java.awt.Dimension videoSize = NeomediaServiceUtils
+              java.awt.Dimension videoSize = NeomediaServiceUtils
                     .getMediaServiceImpl()
                         .getDeviceConfiguration()
                             .getVideoSize();
