@@ -34,7 +34,9 @@ dependencies {
 
     implementation project(':thirdLibs')
     implementation deps.javaStubs
-    implementation deps.fmj
+    //implementation deps.fmj
+    implementation group: 'org.jitsi', name: 'fmj', version: '1.0.1-jitsi'
+
     implementation deps.osgi
     implementation deps.ice4j
     //implementation deps.netaddr

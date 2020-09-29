@@ -74,10 +74,9 @@ dependencies {
     implementation 'pub.devrel:easypermissions:3.0.0'
     //implementation files('libs/protocol.jar')
 
-    //compile files('libs/bccontrib.jar')
-    //implementation deps.bccontrib
-    //compile files('libs/bouncycastle.jar')
-    //implementation deps.bouncycastle
+    // https://mvnrepository.com/artifact/org.jitsi/fmj
+    implementation group: 'org.jitsi', name: 'fmj', version: '1.0.1-jitsi'
+
     compile files('libs/browserlauncher.jar')
     compile files('libs/callhistory.jar')
     compile files('libs/certificate.jar')
@@ -90,28 +89,25 @@ dependencies {
     compile files('libs/filehistory.jar')
     compile files('libs/globaldisplaydetails.jar')
     compile files('libs/history.jar')
-    //compile files('libs/httpclient.jar')
-    //compile files('libs/httpcore.jar')
-    //compile files('libs/httputil.jar')
+
     implementation deps.javaStubs
-    //compile files('libs/libjitsi.jar')
-    implementation deps.fmj
+
     implementation files('libs/log4j-1.2.8.jar')
     implementation files('libs/metahistory.jar')
     implementation files('libs/msghistory.jar')
     implementation files('libs/muc.jar')
-    //compile files('libs/netaddr.jar')
+
     implementation deps.ice4j
     implementation files('libs/notification-service.jar')
     implementation files('libs/notification-wiring.jar')
-    //compile files('libs/osgi.core.jar')
+
     implementation deps.osgi
     implementation files('libs/otr.jar')
     implementation files('libs/plugin-loggingutils.jar')
     //compile files('libs/protocol.jar')
     implementation files('libs/replacement.jar')
     implementation files('libs/resourcemanager.jar')
-   // compile files('libs/sdes4j.jar')
+
     implementation files('libs/smack-sasl.jar')
     implementation files('libs/sysactivitynotifications.jar')
     implementation files('libs/systray-service.jar')
